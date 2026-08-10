@@ -54,9 +54,15 @@ p{margin:0 0 var(--e-16);max-width:62ch}
 
 .cabecera{display:flex;align-items:center;justify-content:space-between;gap:var(--e-16);padding:var(--e-16) var(--e-24);border-bottom:1px solid var(--borde);flex-wrap:wrap;background:var(--fondo)}
 .cabecera .marca img{height:28px;width:auto;display:block}
+.cabecera-derecha{display:flex;align-items:center;gap:var(--e-24);flex-wrap:wrap}
 .nav-principal{display:flex;gap:var(--e-24);flex-wrap:wrap}
 .nav-principal a{color:var(--texto-tenue);text-decoration:none;font-weight:600;letter-spacing:.01em}
 .nav-principal a:hover,.nav-principal a[aria-current="page"]{color:var(--mar)}
+
+.selector-idioma{display:flex;gap:var(--e-8)}
+.selector-idioma a{color:var(--texto-tenue);text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:.04em;padding:.2rem .5rem;border:1px solid var(--borde);border-radius:4px;line-height:1.4}
+.selector-idioma a:hover{border-color:var(--mar);color:var(--mar)}
+.selector-idioma a[aria-current="true"]{background:var(--mar);border-color:var(--mar);color:#fff}
 
 .hero-foto{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--borde)}
 .hero{padding:var(--e-64) var(--e-24) var(--e-48)}
