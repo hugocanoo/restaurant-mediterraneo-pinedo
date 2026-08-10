@@ -1,0 +1,107 @@
+/* Restaurant Mediterráneo (Pinedo) — sistema propio: azafrán de su paella + azul
+   del mar de Pinedo. Nada compartido con los otros negocios hechos con este kit. */
+
+@font-face {
+  font-family: 'Bitter Local';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fuentes/bitter-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans Local';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../fuentes/worksans-variable.woff2') format('woff2');
+}
+
+:root{
+  --fondo:#fbf6ec;
+  --superficie:#f2e8d2;
+  --superficie-alta:#eadcb8;
+  --texto:#2a2420;
+  --texto-tenue:#6b5f4f;
+  --acento:#c98a1c;
+  --acento-oscuro:#a06f14;
+  --mar:#0e6b6b;
+  --mar-suave:#e4f0ee;
+  --borde:#ddccA0;
+
+  --font-titular:'Bitter Local', Georgia, serif;
+  --font-texto:'Work Sans Local', -apple-system, 'Segoe UI', sans-serif;
+
+  --texto-18:1.125rem; --texto-22:1.375rem; --texto-28:1.75rem;
+  --texto-35:2.1875rem; --texto-44:2.75rem; --texto-56:3.5rem;
+
+  --e-4:.25rem; --e-8:.5rem; --e-12:.75rem; --e-16:1rem; --e-24:1.5rem;
+  --e-32:2rem; --e-48:3rem; --e-64:4rem; --e-96:6rem; --e-128:8rem;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font-family:var(--font-texto);font-size:var(--texto-18);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--mar)}
+a:focus-visible, button:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
+
+h1,h2,h3{font-family:var(--font-titular);font-weight:700;line-height:1.12;text-wrap:balance;margin:0 0 var(--e-16)}
+h1{font-size:var(--texto-56)}
+h2{font-size:var(--texto-44)}
+h3{font-size:var(--texto-28)}
+p{margin:0 0 var(--e-16);max-width:62ch}
+
+.contenedor{max-width:1100px;margin:0 auto;padding:0 var(--e-24)}
+
+.cabecera{display:flex;align-items:center;justify-content:space-between;gap:var(--e-16);padding:var(--e-16) var(--e-24);border-bottom:1px solid var(--borde);flex-wrap:wrap;background:var(--fondo)}
+.cabecera .marca img{height:28px;width:auto;display:block}
+.nav-principal{display:flex;gap:var(--e-24);flex-wrap:wrap}
+.nav-principal a{color:var(--texto-tenue);text-decoration:none;font-weight:600;letter-spacing:.01em}
+.nav-principal a:hover,.nav-principal a[aria-current="page"]{color:var(--mar)}
+
+.hero-foto{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--borde)}
+.hero{padding:var(--e-64) var(--e-24) var(--e-48)}
+.hero .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:var(--texto-18);color:var(--acento-oscuro);font-weight:700}
+.hero p.intro{font-size:var(--texto-22);color:var(--texto-tenue);max-width:65ch}
+
+.cta{display:inline-block;margin-top:var(--e-16);padding:var(--e-16) var(--e-32);background:var(--mar);color:#fff;text-decoration:none;font-weight:600;border:1px solid var(--mar)}
+.cta:hover{background:#0a5555}
+.cta.secundaria{background:transparent;border:1px solid var(--borde);color:var(--texto);margin-left:var(--e-12)}
+
+.franja-info{background:var(--superficie);padding:var(--e-32) var(--e-24);display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--e-24);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.franja-info h3{font-size:var(--texto-22);margin-bottom:var(--e-8)}
+.franja-info p{color:var(--texto-tenue);margin:0}
+.pendiente{color:var(--acento-oscuro);font-style:italic}
+
+section.bloque{padding:var(--e-64) var(--e-24)}
+section.bloque.mar{background:var(--mar-suave)}
+
+.rejilla-fotos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--e-16);margin-top:var(--e-24)}
+.rejilla-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--borde)}
+.rejilla-fotos figure{margin:0}
+.rejilla-fotos figcaption{font-size:var(--texto-18);color:var(--texto-tenue);margin-top:var(--e-8)}
+
+.revelar{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.revelar.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.revelar{opacity:1;transform:none;transition:none}}
+
+.categoria-carta{margin-bottom:var(--e-48)}
+.categoria-carta h3{border-bottom:2px solid var(--acento);padding-bottom:var(--e-8);display:inline-block}
+.rejilla-platos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--e-8) var(--e-24);margin-top:var(--e-16)}
+.plato{display:flex;justify-content:space-between;gap:var(--e-16);padding:var(--e-8) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
+.plato .precio{color:var(--texto-tenue);font-style:italic;white-space:nowrap;font-size:.9em}
+.aviso-carta{background:var(--superficie-alta);border:1px solid var(--borde);padding:var(--e-16) var(--e-24);margin-bottom:var(--e-32)}
+
+.lista-contacto{list-style:none;margin:0;padding:0;display:grid;gap:var(--e-24)}
+.lista-contacto dt{font-family:var(--font-titular);font-size:var(--texto-22);color:var(--acento-oscuro)}
+.lista-contacto dd{margin:var(--e-4) 0 0;color:var(--texto-tenue)}
+
+.pie{border-top:1px solid var(--borde);padding:var(--e-32) var(--e-24);color:var(--texto-tenue);font-size:var(--texto-18);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--e-16)}
+.pie a{color:var(--texto-tenue)}
+.pie .credito{opacity:.8}
+
+@media (max-width:640px){
+  .hero{padding:var(--e-48) var(--e-16)}
+  section.bloque{padding:var(--e-48) var(--e-16)}
+  h1{font-size:var(--texto-35)}
+  h2{font-size:var(--texto-28)}
+}
