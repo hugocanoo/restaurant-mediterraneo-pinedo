@@ -39,7 +39,8 @@
 }
 
 *{box-sizing:border-box}
-body{margin:0;background:var(--fondo);color:var(--texto);font-family:var(--font-texto);font-size:var(--texto-18);line-height:1.6}
+html{overflow-x:hidden}
+body{margin:0;background:var(--fondo);color:var(--texto);font-family:var(--font-texto);font-size:var(--texto-18);line-height:1.6;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:var(--mar)}
 a:focus-visible, button:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
@@ -59,51 +60,68 @@ p{margin:0 0 var(--e-16);max-width:62ch}
 .nav-principal a{color:var(--texto-tenue);text-decoration:none;font-weight:600;letter-spacing:.01em}
 .nav-principal a:hover,.nav-principal a[aria-current="page"]{color:var(--mar)}
 
-.selector-idioma{display:flex;gap:var(--e-8)}
-.selector-idioma a{color:var(--texto-tenue);text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:.04em;padding:.2rem .5rem;border:1px solid var(--borde);border-radius:4px;line-height:1.4}
-.selector-idioma a:hover{border-color:var(--mar);color:var(--mar)}
-.selector-idioma a[aria-current="true"]{background:var(--mar);border-color:var(--mar);color:#fff}
+.selector-idioma{display:flex;border:1px solid var(--borde);border-radius:999px;overflow:hidden}
+.selector-idioma a{color:var(--texto-tenue);text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.05em;padding:.3rem .7rem;transition:background .15s ease,color .15s ease}
+.selector-idioma a:hover{color:var(--mar);background:var(--superficie)}
+.selector-idioma a[aria-current="true"]{background:var(--mar);color:#fff}
 
 .hero-foto{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--borde)}
 .hero{padding:var(--e-64) var(--e-24) var(--e-48)}
 .hero .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:var(--texto-18);color:var(--acento-oscuro);font-weight:700}
 .hero p.intro{font-size:var(--texto-22);color:var(--texto-tenue);max-width:65ch}
 
-.cta{display:inline-block;margin-top:var(--e-16);padding:var(--e-16) var(--e-32);background:var(--mar);color:#fff;text-decoration:none;font-weight:600;border:1px solid var(--mar)}
-.cta:hover{background:#0a5555}
+@keyframes entra{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .eyebrow,.hero h1,.hero p.intro,.hero .cta{animation:entra .7s ease both}
+.hero h1{animation-delay:.08s}
+.hero p.intro{animation-delay:.18s}
+.hero .cta{animation-delay:.28s}
+.hero .cta.secundaria{animation-delay:.34s}
+@media (prefers-reduced-motion: reduce){.hero .eyebrow,.hero h1,.hero p.intro,.hero .cta{animation:none}}
+
+.cta{display:inline-block;margin-top:var(--e-16);padding:var(--e-16) var(--e-32);background:var(--mar);color:#fff;text-decoration:none;font-weight:600;border:1px solid var(--mar);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.cta:hover{background:#0a5555;transform:translateY(-2px);box-shadow:0 10px 20px -10px rgba(14,107,107,.5)}
 .cta.secundaria{background:transparent;border:1px solid var(--borde);color:var(--texto);margin-left:var(--e-12)}
+.cta.secundaria:hover{border-color:var(--mar);box-shadow:0 10px 20px -12px rgba(42,36,32,.25)}
 
 .franja-info{background:var(--superficie);padding:var(--e-32) var(--e-24);display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--e-24);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
 .franja-info h3{font-size:var(--texto-22);margin-bottom:var(--e-8)}
 .franja-info p{color:var(--texto-tenue);margin:0}
-.pendiente{color:var(--acento-oscuro);font-style:italic}
 
 section.bloque{padding:var(--e-64) var(--e-24)}
 section.bloque.mar{background:var(--mar-suave)}
 
 .rejilla-fotos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--e-16);margin-top:var(--e-24)}
-.rejilla-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--borde)}
-.rejilla-fotos figure{margin:0}
+.rejilla-fotos figure{margin:0;overflow:hidden}
+.rejilla-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--borde);display:block;transition:transform .6s ease}
+.rejilla-fotos figure:hover img{transform:scale(1.045)}
+.rejilla-fotos figure.ancha{grid-column:1 / -1}
+.rejilla-fotos figure.ancha img{aspect-ratio:3 / 1}
 .rejilla-fotos figcaption{font-size:var(--texto-18);color:var(--texto-tenue);margin-top:var(--e-8)}
+@media (prefers-reduced-motion: reduce){.rejilla-fotos img{transition:none}.rejilla-fotos figure:hover img{transform:none}}
+@media (max-width:640px){.rejilla-fotos figure.ancha img{aspect-ratio:4/3}}
 
 .revelar{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
 .revelar.visible{opacity:1;transform:none}
 @media (prefers-reduced-motion: reduce){.revelar{opacity:1;transform:none;transition:none}}
 
-.categoria-carta{margin-bottom:var(--e-48)}
-.categoria-carta h3{border-bottom:2px solid var(--acento);padding-bottom:var(--e-8);display:inline-block}
-.categoria-carta h4{font-family:var(--font-texto);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:var(--texto-18);color:var(--mar);margin:var(--e-24) 0 var(--e-8)}
-.categoria-carta .nota{font-style:italic;color:var(--texto-tenue);font-size:.9rem;margin:var(--e-8) 0 0}
-.rejilla-platos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--e-8) var(--e-24);margin-top:var(--e-16)}
-.plato{display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:var(--e-16);min-width:0;padding:var(--e-8) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
-.plato .precio{color:var(--acento-oscuro);font-weight:700;font-size:.95em}
-.plato .precio.pendiente{color:var(--texto-tenue);font-weight:400;font-style:italic}
-.aviso-carta{background:var(--superficie-alta);border:1px solid var(--borde);padding:var(--e-16) var(--e-24);margin-bottom:var(--e-32)}
+.categoria-carta{margin-bottom:var(--e-64);padding-top:var(--e-32);border-top:1px solid var(--borde)}
+.categoria-carta:first-of-type{padding-top:0;border-top:none}
+.categoria-carta h3{font-size:var(--texto-35);border-bottom:2px solid var(--acento);padding-bottom:var(--e-8);display:inline-block}
+.categoria-carta h4{font-family:var(--font-texto);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:var(--texto-18);color:var(--mar);margin:var(--e-32) 0 var(--e-4);padding-top:var(--e-16);border-top:1px dashed var(--borde)}
+.categoria-carta h4:first-of-type{padding-top:0;border-top:none;margin-top:var(--e-16)}
+.categoria-carta .nota{font-style:italic;color:var(--texto-tenue);font-size:.9rem;margin:var(--e-16) 0 0}
 
-.vino{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;column-gap:var(--e-16);min-width:0;padding:var(--e-8) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
-.vino .nombre{color:var(--texto);font-weight:600;min-width:0}
-.vino .detalle{display:block;color:var(--texto-tenue);font-size:.85rem;font-weight:400;text-transform:none;letter-spacing:0}
-.vino .precio{color:var(--acento-oscuro);font-weight:700;text-align:right}
+/* Una sola columna por sección: nombre a la izquierda, precio a la derecha,
+   siempre alineados — nada de rejilla de varias columnas que se rompa en móvil. */
+.rejilla-platos{display:flex;flex-direction:column;margin-top:var(--e-4)}
+.plato{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;column-gap:var(--e-24);min-width:0;padding:var(--e-12) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
+.plato > span:first-child{flex:1 1 260px;min-width:0}
+.plato .precio{flex:0 0 auto;color:var(--acento-oscuro);font-weight:700;font-size:.95em}
+
+.vino{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;column-gap:var(--e-24);min-width:0;padding:var(--e-12) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
+.vino .nombre{flex:1 1 260px;color:var(--texto);font-weight:600;min-width:0}
+.vino .detalle{display:block;color:var(--texto-tenue);font-size:.85rem;font-weight:400;text-transform:none;letter-spacing:0;margin-top:.2rem}
+.vino .precio{flex:0 0 auto;color:var(--acento-oscuro);font-weight:700;text-align:right}
 .vino .precio .copa{display:block;color:var(--texto-tenue);font-weight:400;font-size:.8rem}
 
 .lista-contacto{list-style:none;margin:0;padding:0;display:grid;gap:var(--e-24)}
@@ -119,4 +137,10 @@ section.bloque.mar{background:var(--mar-suave)}
   section.bloque{padding:var(--e-48) var(--e-16)}
   h1{font-size:var(--texto-35)}
   h2{font-size:var(--texto-28)}
+  .categoria-carta h3{font-size:var(--texto-28)}
+  .categoria-carta{padding-top:var(--e-24);margin-bottom:var(--e-48)}
+  .plato,.vino{column-gap:var(--e-12)}
+  .plato > span:first-child,.vino .nombre{flex-basis:180px}
+  .cabecera{padding:var(--e-12) var(--e-16)}
+  .cabecera-derecha{width:100%;justify-content:space-between}
 }
