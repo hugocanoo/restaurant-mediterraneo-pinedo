@@ -92,10 +92,19 @@ section.bloque.mar{background:var(--mar-suave)}
 
 .categoria-carta{margin-bottom:var(--e-48)}
 .categoria-carta h3{border-bottom:2px solid var(--acento);padding-bottom:var(--e-8);display:inline-block}
+.categoria-carta h4{font-family:var(--font-texto);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:var(--texto-18);color:var(--mar);margin:var(--e-24) 0 var(--e-8)}
+.categoria-carta .nota{font-style:italic;color:var(--texto-tenue);font-size:.9rem;margin:var(--e-8) 0 0}
 .rejilla-platos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--e-8) var(--e-24);margin-top:var(--e-16)}
-.plato{display:flex;justify-content:space-between;gap:var(--e-16);padding:var(--e-8) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
-.plato .precio{color:var(--texto-tenue);font-style:italic;white-space:nowrap;font-size:.9em}
+.plato{display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:var(--e-16);min-width:0;padding:var(--e-8) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
+.plato .precio{color:var(--acento-oscuro);font-weight:700;font-size:.95em}
+.plato .precio.pendiente{color:var(--texto-tenue);font-weight:400;font-style:italic}
 .aviso-carta{background:var(--superficie-alta);border:1px solid var(--borde);padding:var(--e-16) var(--e-24);margin-bottom:var(--e-32)}
+
+.vino{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;column-gap:var(--e-16);min-width:0;padding:var(--e-8) 0;border-bottom:1px dashed var(--borde);font-variant-numeric:tabular-nums}
+.vino .nombre{color:var(--texto);font-weight:600;min-width:0}
+.vino .detalle{display:block;color:var(--texto-tenue);font-size:.85rem;font-weight:400;text-transform:none;letter-spacing:0}
+.vino .precio{color:var(--acento-oscuro);font-weight:700;text-align:right}
+.vino .precio .copa{display:block;color:var(--texto-tenue);font-weight:400;font-size:.8rem}
 
 .lista-contacto{list-style:none;margin:0;padding:0;display:grid;gap:var(--e-24)}
 .lista-contacto dt{font-family:var(--font-titular);font-size:var(--texto-22);color:var(--acento-oscuro)}
