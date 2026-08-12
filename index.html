@@ -3,99 +3,245 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Restaurant Mediterráneo — Cuina valenciana a la platja de Pinedo</title>
-<meta name="description" content="Arrossos i paelles davant del mar, a la platja de Pinedo (València). Terrassa amb vistes al port de València.">
-<meta property="og:title" content="Restaurant Mediterráneo — Platja de Pinedo">
-<meta property="og:description" content="Cuina valenciana tradicional, arrossos i paelles, amb terrassa davant del mar a Pinedo (València).">
-<meta property="og:image" content="fotos/paella-valenciana.jpg">
+<title>Restaurant Mediterráneo — Cuina valenciana davant del mar</title>
+<meta name="description" content="Arrossos, paelles i cuina mediterrània a la platja de Pinedo, al costat del Parc Natural de l'Albufera.">
+<meta property="og:title" content="Restaurant Mediterráneo — Cuina valenciana davant del mar">
+<meta property="og:description" content="Arrossos, paelles i cuina mediterrània a la platja de Pinedo, al costat del Parc Natural de l'Albufera.">
+<meta property="og:image" content="fotos/terraza-panoramica.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
   <a class="marca" href="index.html">
-    <img src="fotos/logo.png" alt="Restaurant Mediterráneo">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
   </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Principal">
-      <a href="index.html" aria-current="page">Inici</a>
-      <a href="carta.html">Carta</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contacto.html">Contacte</a>
+        <a href="index.html" aria-current="page">Inici</a>
+        <a href="carta.html">Carta</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacte</a>
     </nav>
     <div class="selector-idioma" aria-label="Idioma">
-      <a href="index.html" aria-current="true">VA</a>
-      <a href="index-es.html">ES</a>
-      <a href="index-en.html">EN</a>
+        <a href="index.html" aria-current="true">VA</a>
+        <a href="index-es.html">ES</a>
+        <a href="index-en.html">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Reservar</a>
+    <button class="abrir-menu" type="button" aria-label="Obrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
-<img class="hero-foto" src="fotos/terraza-1.jpg" alt="Terrassa de Restaurant Mediterráneo amb vistes al mar a la platja de Pinedo">
-
 <main>
+
   <section class="hero">
+    <img class="hero-fondo" src="fotos/terraza-panoramica.jpg" alt="Terrassa de Restaurant Mediterráneo a la platja de Pinedo" fetchpriority="high">
     <div class="contenedor">
-      <p class="eyebrow">Cuina valenciana · Platja de Pinedo</p>
-      <h1>Arrossos i paelles davant del mar</h1>
-      <p class="intro">A peu de platja, al costat del Parc Natural de l'Albufera,
-      Restaurant Mediterráneo serveix cuina valenciana tradicional des de la seua
-      terrassa amb vistes al port de València i al mar. Menjador climatitzat per a
-      65 comensals, amb accés per a persones amb mobilitat reduïda.</p>
-      <a class="cta" href="carta.html">Veure la carta</a>
-      <a class="cta secundaria" href="tel:+34963247145">Reserves: 96 324 71 45</a>
+      <p class="eyebrow claro">Pinedo · València · Vora el mar</p>
+      <h1>Restaurant Mediterráneo</h1>
+      <p class="lema">Cuina valenciana davant del mar</p>
+      <p class="intro">Arrossos, paelles i cuina mediterrània a la platja de Pinedo, al costat del Parc Natural de l'Albufera.</p>
+      <div class="botonera">
+        <a class="cta clara" href="carta.html">Veure la carta</a>
+        <a class="cta contorno-claro" href="tel:+34963247145">Reserves: 96 324 71 45</a>
+      </div>
     </div>
   </section>
 
   <div class="franja-info">
-    <div>
-      <h3>Horari</h3>
-      <p>Diumenge, de 9.00 a 1.00 h.<br>Dilluns a dimecres, de 9.00 a 19.00 h.<br>Dijous a dissabte, de 9.00 a 1.00 h.</p>
-    </div>
-    <div>
-      <h3>On som</h3>
-      <p>Travessia Pinedo al Mar, 88 · 46013 València.</p>
-    </div>
-    <div>
-      <h3>Telèfon</h3>
-      <p><a href="tel:+34963247145">96 324 71 45</a></p>
+    <div class="contenedor">
+      <div>
+        <h3>Horari</h3>
+        <p>Diumenge, de 9.00 a 1.00 h.<br>Dilluns a dimecres, de 9.00 a 19.00 h.<br>Dijous a dissabte, de 9.00 a 1.00 h.</p>
+      </div>
+      <div>
+        <h3>On som</h3>
+        <p>Travessia Pinedo al Mar, 88<br>46013 València</p>
+      </div>
+      <div>
+        <h3>Telèfon</h3>
+        <p><a href="tel:+34963247145">96 324 71 45</a></p>
+      </div>
     </div>
   </div>
 
-  <section class="bloque">
+  <section class="seccion">
     <div class="contenedor">
-      <h2>El local</h2>
-      <p>Un menjador reformat i climatitzat amb capacitat per a uns 65 comensals,
-      i una àmplia terrassa exterior amb excel·lents vistes al port de València i
-      al mar — el lloc per a gaudir de les seues especialitats davant del
-      Mediterrani, a un pas de la platja de Pinedo i del Parc Natural de
-      l'Albufera.</p>
+      <div class="duo revelar">
+        <div>
+          <p class="eyebrow">L'experiència</p>
+          <h2>Molt més que un dinar</h2>
+        </div>
+        <div class="texto-grande">
+          <p>A peu de platja, Restaurant Mediterráneo serveix cuina valenciana tradicional des de fa anys: arrossos fets al moment, peix i marisc, i una terrassa amb vistes al port de València i al mar.</p>
+          <p>Un lloc per a compartir una paella, allargar la sobretaula i acabar amb un passeig per la platja de Pinedo.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="bloque mar">
+  <section class="seccion ajustada" style="padding-top:0">
     <div class="contenedor">
-      <h2>Una ullada a la casa</h2>
-      <div class="rejilla-fotos">
-        <figure class="revelar">
-          <img src="fotos/comedor-1.jpg" alt="Menjador de Restaurant Mediterráneo, acabat de reformar">
-          <figcaption>El menjador, acabat de reformar.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/paella-valenciana.jpg" alt="Paella valenciana de Restaurant Mediterráneo">
-          <figcaption>La paella valenciana.</figcaption>
-        </figure>
+      <div class="rejilla-tarjetas">
+        <a class="tarjeta revelar" href="carta.html">
+          <div class="marco"><img src="fotos/paella-valenciana.jpg" alt="Paella valenciana de Restaurant Mediterráneo" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3>Arrossos i paelles</h3>
+            <p>Paelles i arrossos valencians fets al moment, per a compartir al voltant de la taula.</p>
+            <span class="enlace-flecha">Descobrir <span>&rarr;</span></span>
+          </div>
+        </a>
+        <a class="tarjeta revelar" href="galeria.html">
+          <div class="marco"><img src="fotos/terraza-2.jpg" alt="Terrassa exterior de Restaurant Mediterráneo" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3>Terrassa i menjador</h3>
+            <p>Terrassa exterior amb vistes al mar i menjador climatitzat, acabat de reformar.</p>
+            <span class="enlace-flecha">Descobrir <span>&rarr;</span></span>
+          </div>
+        </a>
+        <a class="tarjeta revelar" href="contacto.html">
+          <div class="marco"><img src="fotos/albufera-atardecer.jpg" alt="Albufera de València en pondre's el sol" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3>Pinedo i l'Albufera</h3>
+            <p>A un pas de la platja i del Parc Natural de l'Albufera, al sud de València.</p>
+            <span class="enlace-flecha">Descobrir <span>&rarr;</span></span>
+          </div>
+        </a>
       </div>
-      <p style="margin-top:var(--e-24)"><a href="galeria.html">Veure més fotos →</a></p>
     </div>
   </section>
+
+  <section class="seccion arena">
+    <div class="contenedor">
+      <div class="seleccion revelar">
+        <div class="marco-foto">
+          <img src="fotos/paella-marisco.jpg" alt="Paella valenciana de Restaurant Mediterráneo" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow">Arrossos</p>
+          <h2>El sabor de València</h2>
+          <p>Els nostres arrossos són els protagonistes de la taula. Es fan al moment: calcula uns 30 minuts.</p>
+          <ul class="lista-precios">
+          <li><span class="nombre">Paella Valenciana</span><span class="precio">14,00 €</span></li>
+          <li><span class="nombre">Paella de marisc</span><span class="precio">18,00 €</span></li>
+          <li><span class="nombre">Paella mixta</span><span class="precio">14,00 €</span></li>
+          <li><span class="nombre">Fideuà</span><span class="precio">14,00 €</span></li>
+          <li><span class="nombre">Arròs negre</span><span class="precio">16,00 €</span></li>
+          <li><span class="nombre">Arròs del senyoret</span><span class="precio">16,00 €</span></li>
+          <li><span class="nombre">Arròs a banda</span><span class="precio">16,00 €</span></li>
+          <li><span class="nombre">Paella de llamàntol</span><span class="precio">22,00 €</span></li>
+          <li><span class="nombre">Paella de llagosta</span><span class="precio">23,00 €</span></li>
+          </ul>
+          <p style="margin-top:1rem;font-size:.88rem;color:var(--tinta-suave);font-style:italic">Mínim dues racions, preu per ració.</p>
+          <div class="botonera">
+            <a class="cta" href="carta.html">Veure tota la carta</a>
+            <a class="cta secundaria" href="tel:+34963247145">Reservar per telèfon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partido">
+    <div class="lado-foto">
+      <img src="fotos/terraza-2.jpg" alt="Terrassa exterior de Restaurant Mediterráneo" loading="lazy">
+    </div>
+    <div class="lado-panel">
+      <p class="eyebrow claro">La terrassa</p>
+      <h2>Menjar davant del Mediterrani</h2>
+      <p>Terrassa exterior amb vistes al port de València i al mar, i menjador climatitzat per a uns 65 comensals.</p>
+      <div class="botonera">
+        <a class="cta clara" href="galeria.html">Veure la galeria</a>
+        <a class="cta contorno-claro" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Com arribar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="duo-columnas revelar">
+        <div>
+          <div class="marco-foto"><img src="fotos/comedor-copas.jpg" alt="Menjador de Restaurant Mediterráneo" loading="lazy"></div>
+          <h3>El restaurant</h3>
+          <ul class="lista-checks">
+            <li>Menjador climatitzat i reformat</li>
+            <li>Capacitat per a uns 65 comensals</li>
+            <li>Terrassa exterior amb vistes al mar</li>
+            <li>Accés per a persones amb mobilitat reduïda</li>
+          </ul>
+          <p style="margin-top:1.25rem"><a class="enlace-flecha" href="galeria.html">Veure la galeria <span>&rarr;</span></a></p>
+        </div>
+        <div>
+          <div class="marco-foto"><img src="fotos/albufera-atardecer.jpg" alt="Albufera de València en pondre's el sol" loading="lazy"></div>
+          <h3>Pinedo i l'Albufera</h3>
+          <p>El restaurant està a la platja de Pinedo, al sud de València, en un entorn lligat al mar, a l'arròs i al Parc Natural de l'Albufera.</p>
+          <p style="margin-top:1.25rem"><a class="enlace-flecha" href="contacto.html">Com arribar <span>&rarr;</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="panoramica">
+    <img src="fotos/comedor-panoramica.jpg" alt="Menjador de Restaurant Mediterráneo, vista panoràmica" loading="lazy">
+  </div>
+
+  <section class="seccion arena">
+    <div class="contenedor">
+      <div class="duo alineado revelar">
+        <div>
+          <p class="eyebrow">Reserves</p>
+          <h2>Et guardem taula</h2>
+          <p>Reserva per telèfon i t'atenem directament. Els arrossos per encàrrec, millor avisar en reservar.</p>
+        </div>
+        <div style="display:flex;align-items:center">
+          <div class="botonera" style="margin-top:0">
+            <a class="cta" href="tel:+34963247145">96 324 71 45</a>
+            <a class="cta secundaria" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Com arribar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Platja de Pinedo, València · <a href="tel:+34963247145">96 324 71 45</a> · <a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Web creada per HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Cuina valenciana tradicional a la platja de Pinedo, València.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Reservar taula</a></p>
+    </div>
+    <div>
+      <h3>Contacte</h3>
+      <ul>
+        <li>Travessia Pinedo al Mar, 88<br>46013 València</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Com arribar</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Telefona per a confirmar l'horari del dia.</p>
+    </div>
+    <div>
+      <h3>Seccions</h3>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contacto.html">Contacte</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Web creada per HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>

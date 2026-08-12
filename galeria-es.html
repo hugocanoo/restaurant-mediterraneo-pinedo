@@ -4,76 +4,249 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galería — Restaurant Mediterráneo</title>
-<meta name="description" content="Fotos de Restaurant Mediterráneo: terraza, comedor y platos, en la playa de Pinedo (València).">
+<meta name="description" content="La terraza, el comedor, los arroces y el entorno — fotografías reales del restaurante.">
 <meta property="og:title" content="Galería — Restaurant Mediterráneo">
-<meta property="og:description" content="Terraza, comedor y platos de Restaurant Mediterráneo, en la playa de Pinedo.">
-<meta property="og:image" content="fotos/terraza-1.jpg">
+<meta property="og:description" content="La terraza, el comedor, los arroces y el entorno — fotografías reales del restaurante.">
+<meta property="og:image" content="fotos/terraza-panoramica.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
-  <a class="marca" href="index-es.html"><img src="fotos/logo.png" alt="Restaurant Mediterráneo"></a>
+  <a class="marca" href="index-es.html">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
+  </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Principal">
-      <a href="index-es.html">Inicio</a>
-      <a href="carta-es.html">Carta</a>
-      <a href="galeria-es.html" aria-current="page">Galería</a>
-      <a href="contacto-es.html">Contacto</a>
+        <a href="index-es.html">Inicio</a>
+        <a href="carta-es.html">Carta</a>
+        <a href="galeria-es.html" aria-current="page">Galería</a>
+        <a href="contacto-es.html">Contacto</a>
     </nav>
     <div class="selector-idioma" aria-label="Idioma">
-      <a href="galeria.html">VA</a>
-      <a href="galeria-es.html" aria-current="true">ES</a>
-      <a href="galeria-en.html">EN</a>
+        <a href="galeria.html">VA</a>
+        <a href="galeria-es.html" aria-current="true">ES</a>
+        <a href="galeria-en.html">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Reservar</a>
+    <button class="abrir-menu" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main>
-  <section class="bloque">
-    <div class="contenedor">
-      <h1>Galería</h1>
-      <p>Un vistazo a la terraza, el comedor y algunos de nuestros platos.</p>
 
-      <div class="rejilla-fotos">
-        <figure class="revelar ancha">
-          <img src="fotos/terraza-1.jpg" alt="Terraza de Restaurant Mediterráneo con vistas al mar">
-          <figcaption>La terraza, frente al mar.</figcaption>
-        </figure>
-        <figure class="revelar ancha">
-          <img src="fotos/comedor-panoramica.jpg" alt="Vista panorámica del comedor de Restaurant Mediterráneo">
-          <figcaption>El comedor, vista panorámica.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/comedor-1.jpg" alt="Comedor de Restaurant Mediterráneo">
-          <figcaption>El comedor.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/paella-valenciana.jpg" alt="Paella valenciana de Restaurant Mediterráneo">
-          <figcaption>Paella valenciana.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/clotxines.jpg" alt="Clotxines (mejillones) de Restaurant Mediterráneo">
-          <figcaption>Clotxines (mejillones).</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/braves.jpg" alt="Patatas bravas de Restaurant Mediterráneo">
-          <figcaption>Braves (patatas bravas).</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/tellines.jpg" alt="Tellinas de Restaurant Mediterráneo">
-          <figcaption>Tellinas.</figcaption>
-        </figure>
+  <section class="hero interior">
+    <img class="hero-fondo" src="fotos/comedor-panoramica.jpg" alt="Comedor de Restaurant Mediterráneo" fetchpriority="high">
+    <div class="contenedor">
+      <p class="eyebrow claro">Galería</p>
+      <h1>Galería</h1>
+      <p class="intro">La terraza, el comedor, los arroces y el entorno — fotografías reales del restaurante.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="grupo-galeria">
+        <h2>La casa</h2>
+        <div class="mosaico">
+          <figure class="revelar completa">
+            <img src="fotos/terraza-panoramica.jpg" alt="Terraza de Restaurant Mediterráneo con vistas al mar" loading="lazy">
+            <figcaption>La terraza, frente al mar.</figcaption>
+          </figure>
+          <figure class="revelar completa">
+            <img src="fotos/comedor-panoramica.jpg" alt="Vista panorámica del comedor" loading="lazy">
+            <figcaption>El comedor, vista panorámica.</figcaption>
+          </figure>
+          <figure class="revelar media">
+            <img src="fotos/exterior.jpg" alt="Exterior del restaurante en la playa de Pinedo" loading="lazy">
+            <figcaption>La entrada, a pie de playa.</figcaption>
+          </figure>
+          <figure class="revelar media">
+            <img src="fotos/terraza-2.jpg" alt="Terraza exterior del restaurante" loading="lazy">
+            <figcaption>La terraza exterior.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/comedor-copas.jpg" alt="Mesa puesta en el comedor" loading="lazy">
+            <figcaption>El comedor, recién reformado.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/comedor-sala.jpg" alt="Sala del comedor" loading="lazy">
+            <figcaption>La sala.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/mesa-puesta.jpg" alt="Detalle de una mesa puesta" loading="lazy">
+            <figcaption>Mesa puesta.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>Los arroces</h2>
+        <div class="mosaico">
+          <figure class="revelar ancha">
+            <img src="fotos/paellero.jpg" alt="Paellas al fuego en el paellero" loading="lazy">
+            <figcaption>El paellero, en marcha.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/ingredientes.jpg" alt="Ingredientes de la paella valenciana" loading="lazy">
+            <figcaption>Antes de empezar.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-valenciana.jpg" alt="Paella valenciana" loading="lazy">
+            <figcaption>Paella valenciana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-marisco.jpg" alt="Paella de marisco" loading="lazy">
+            <figcaption>Paella de marisco.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-senyoret.jpg" alt="Arroz del senyoret" loading="lazy">
+            <figcaption>Arroz del senyoret.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-negro.jpg" alt="Arroz negro" loading="lazy">
+            <figcaption>Arroz negro.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-bogavante.jpg" alt="Paella de bogavante" loading="lazy">
+            <figcaption>Paella de bogavante.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-meloso.jpg" alt="Arroz meloso en cazuela" loading="lazy">
+            <figcaption>Arroz meloso.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>De la carta</h2>
+        <div class="mosaico">
+          <figure class="revelar">
+            <img src="fotos/clotxines.jpg" alt="Clóchinas" loading="lazy">
+            <figcaption>Clóchinas, en temporada.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tellines.jpg" alt="Tellinas" loading="lazy">
+            <figcaption>Tellinas.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/braves.jpg" alt="Patatas bravas" loading="lazy">
+            <figcaption>Bravas.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/calamares.jpg" alt="Calamares a la romana" loading="lazy">
+            <figcaption>Calamares a la romana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/sepionet.jpg" alt="Sepionet" loading="lazy">
+            <figcaption>Sepionet.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/esgarraet.jpg" alt="Esgarraet" loading="lazy">
+            <figcaption>Esgarraet.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/pescadito-frito.jpg" alt="Pescado frito" loading="lazy">
+            <figcaption>Pescado frito.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/puntilla.jpg" alt="Puntilla" loading="lazy">
+            <figcaption>Puntilla.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/mariscada.jpg" alt="Mariscada" loading="lazy">
+            <figcaption>Mariscada.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/parrillada.jpg" alt="Parrillada" loading="lazy">
+            <figcaption>Parrillada.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/pescado-plancha.jpg" alt="Pescado a la plancha" loading="lazy">
+            <figcaption>Pescado a la plancha.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/chuletas-cordero.jpg" alt="Chuletas de cordero" loading="lazy">
+            <figcaption>Chuletas de cordero.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tarta-abuela.jpg" alt="Tarta de la abuela" loading="lazy">
+            <figcaption>Tarta de la abuela.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/crema-catalana.jpg" alt="Crema catalana" loading="lazy">
+            <figcaption>Crema catalana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tiramisu.jpg" alt="Tiramisú" loading="lazy">
+            <figcaption>Tiramisú.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>El entorno</h2>
+        <div class="mosaico">
+          <figure class="revelar ancha">
+            <img src="fotos/playa-pinedo.jpg" alt="Playa de Pinedo" loading="lazy">
+            <figcaption>La playa de Pinedo, a un paso.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/playa-atardecer.jpg" alt="Playa de Pinedo al atardecer" loading="lazy">
+            <figcaption>El paseo, al atardecer.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/albufera-atardecer.jpg" alt="La Albufera al atardecer" loading="lazy">
+            <figcaption>La Albufera, al atardecer.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/albufera-barca.jpg" alt="Barca en la Albufera" loading="lazy">
+            <figcaption>Barca en la Albufera.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="botonera" style="margin-top:0">
+        <a class="cta" href="carta-es.html">Ver toda la carta</a>
+        <a class="cta secundaria" href="tel:+34963247145">Reservar mesa</a>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Playa de Pinedo, Valencia · <a href="tel:+34963247145">96 324 71 45</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Web creada por HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Cocina valenciana tradicional en la playa de Pinedo, Valencia.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Reservar mesa</a></p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <ul>
+        <li>Travesía Pinedo al Mar, 88<br>46013 Valencia</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Cómo llegar</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Llama para confirmar el horario del día.</p>
+    </div>
+    <div>
+      <h3>Secciones</h3>
+      <ul>
+        <li><a href="index-es.html">Inicio</a></li>
+        <li><a href="carta-es.html">Carta</a></li>
+        <li><a href="galeria-es.html">Galería</a></li>
+        <li><a href="contacto-es.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Web creada por HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>

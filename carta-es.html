@@ -3,323 +3,386 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carta — Restaurant Mediterráneo</title>
-<meta name="description" content="La carta de Restaurant Mediterráneo: entrantes, arroces, pescados, carnes, postres, bebidas y vinos, en la playa de Pinedo.">
-<meta property="og:title" content="Carta — Restaurant Mediterráneo">
-<meta property="og:description" content="Entrantes, arroces, pescados, carnes, postres, bebidas y vinos, en la playa de Pinedo.">
-<meta property="og:image" content="fotos/clotxines.jpg">
+<title>La carta — Restaurant Mediterráneo</title>
+<meta name="description" content="Precios por ración, IVA incluido. Los arroces se hacen al momento: calcula unos 30 minutos.">
+<meta property="og:title" content="La carta — Restaurant Mediterráneo">
+<meta property="og:description" content="Precios por ración, IVA incluido. Los arroces se hacen al momento: calcula unos 30 minutos.">
+<meta property="og:image" content="fotos/paella-valenciana.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
-  <a class="marca" href="index-es.html"><img src="fotos/logo.png" alt="Restaurant Mediterráneo"></a>
+  <a class="marca" href="index-es.html">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
+  </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Principal">
-      <a href="index-es.html">Inicio</a>
-      <a href="carta-es.html" aria-current="page">Carta</a>
-      <a href="galeria-es.html">Galería</a>
-      <a href="contacto-es.html">Contacto</a>
+        <a href="index-es.html">Inicio</a>
+        <a href="carta-es.html" aria-current="page">Carta</a>
+        <a href="galeria-es.html">Galería</a>
+        <a href="contacto-es.html">Contacto</a>
     </nav>
     <div class="selector-idioma" aria-label="Idioma">
-      <a href="carta.html">VA</a>
-      <a href="carta-es.html" aria-current="true">ES</a>
-      <a href="carta-en.html">EN</a>
+        <a href="carta.html">VA</a>
+        <a href="carta-es.html" aria-current="true">ES</a>
+        <a href="carta-en.html">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Reservar</a>
+    <button class="abrir-menu" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main>
-  <section class="bloque">
+
+  <section class="hero interior">
+    <img class="hero-fondo" src="fotos/arroz-senyoret.jpg" alt="Arroz del senyoret de Restaurant Mediterráneo" fetchpriority="high">
     <div class="contenedor">
+      <p class="eyebrow claro">Carta</p>
       <h1>La carta</h1>
+      <p class="intro">Precios por ración, IVA incluido. Los arroces se hacen al momento: calcula unos 30 minutos.</p>
+    </div>
+  </section>
+
+  <nav class="indice-carta" aria-label="La carta">
+    <div class="contenedor">
+        <a href="#entrantes">Entrantes</a>
+        <a href="#arroces">Arroces</a>
+        <a href="#pescados">Pescados</a>
+        <a href="#carne">Carne</a>
+        <a href="#postres">Postres</a>
+        <a href="#menu-ninos">Menú niños</a>
+        <a href="#bebidas">Bebidas</a>
+        <a href="#vinos">Vinos</a>
+    </div>
+  </nav>
+
+  <section class="seccion">
+    <div class="contenedor estrecho">
 
       <div class="categoria-carta">
-        <h3>Entrantes</h3>
-        <h4>Fríos</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Jamón y queso curado</span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Pan tostado, ajoaceite y tomate</span><span class="precio">4,00 €</span></div>
-          <div class="plato"><span>Anchoas</span><span class="precio">3,00 €/ud.</span></div>
-          <div class="plato"><span>Ensalada de la casa</span><span class="precio">10,00 €</span></div>
-          <div class="plato"><span>Ensalada de queso de cabra</span><span class="precio">12,00 €</span></div>
-          <div class="plato"><span>Esgarraet <em>(pimiento asado con bacalao, aliñado con aceite de oliva)</em></span><span class="precio">9,00 €</span></div>
-        </div>
-        <h4>Calientes</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Bravas</span><span class="precio">7,00 €</span></div>
-          <div class="plato"><span>Clóchinas <em>(en temporada)</em></span><span class="precio">10,00 €</span></div>
-          <div class="plato"><span>Calamares a la romana</span><span class="precio">12,00 €</span></div>
-          <div class="plato"><span>Sepionet</span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Calamar entero plancha</span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Chipirones</span><span class="precio">12,00 €</span></div>
-          <div class="plato"><span>Chipirones con ajos tiernos y habas</span><span class="precio">10,00 €</span></div>
-          <div class="plato"><span>Boquerón frito</span><span class="precio">12,00 €</span></div>
-          <div class="plato"><span>Tellinas</span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Croquetas de bacalao</span><span class="precio">2,00 €/ud.</span></div>
-          <div class="plato"><span>Croqueta de pez plata</span><span class="precio">3,00 €/ud.</span></div>
-          <div class="plato"><span>Verduras a la plancha</span><span class="precio">10,00 €</span></div>
-          <div class="plato"><span>Titaina <em>(tomate frito con atún y piñones)</em></span><span class="precio">10,00 €</span></div>
-        </div>
+      <h2 id="entrantes">Entrantes</h2>
+      <h4>Fríos</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Jamón y queso curado</span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Pan tostado, ajoaceite y tomate</span><span class="precio">4,00 €</span></div>
+      <div class="plato"><span>Anchoas</span><span class="precio">3,00 €/ud.</span></div>
+      <div class="plato"><span>Ensalada de la casa</span><span class="precio">10,00 €</span></div>
+      <div class="plato"><span>Ensalada de queso de cabra</span><span class="precio">12,00 €</span></div>
+      <div class="plato"><span>Esgarraet <em>(pimiento asado con bacalao, aliñado con aceite de oliva)</em></span><span class="precio">9,00 €</span></div>
+      </div>
+      <h4>Calientes</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Bravas</span><span class="precio">7,00 €</span></div>
+      <div class="plato"><span>Clóchinas <em>(en temporada)</em></span><span class="precio">10,00 €</span></div>
+      <div class="plato"><span>Calamares a la romana</span><span class="precio">12,00 €</span></div>
+      <div class="plato"><span>Sepionet</span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Calamar entero plancha</span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Chipirones</span><span class="precio">12,00 €</span></div>
+      <div class="plato"><span>Chipirones con ajos tiernos y habas</span><span class="precio">10,00 €</span></div>
+      <div class="plato"><span>Boquerón frito</span><span class="precio">12,00 €</span></div>
+      <div class="plato"><span>Tellinas</span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Croquetas de bacalao</span><span class="precio">2,00 €/ud.</span></div>
+      <div class="plato"><span>Croqueta de pez plata</span><span class="precio">3,00 €/ud.</span></div>
+      <div class="plato"><span>Verduras a la plancha</span><span class="precio">10,00 €</span></div>
+      <div class="plato"><span>Titaina <em>(tomate frito con atún y piñones)</em></span><span class="precio">10,00 €</span></div>
+      </div>
       </div>
 
       <div class="categoria-carta">
-        <h3>Arroces</h3>
-        <h4>Paellas</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Paella Valenciana</span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Paella de verduras <em>(por encargo)</em></span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Paella de marisco</span><span class="precio">18,00 €</span></div>
-          <div class="plato"><span>Paella mixta <em>(carne y marisco)</em></span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Paella de bogavante</span><span class="precio">22,00 €</span></div>
-          <div class="plato"><span>Fideuà <em>(marisco con fideos)</em></span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Arroz negro <em>(con sepia en su tinta)</em></span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Arroz del senyoret <em>(marisco pelado)</em></span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Arroz a banda <em>(por encargo)</em></span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Arroz de chipirones en su tinta, ajos tiernos y habas</span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Paella de langosta</span><span class="precio">23,00 €</span></div>
-          <div class="plato"><span>Fideuá negra</span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Arroz o fideuá de pato, setas, ajos tiernos y foie <em>(por encargo)</em></span><span class="precio">18,00 €</span></div>
-        </div>
-        <h4>Melosos</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Arroz de pato <em>(por encargo)</em></span><span class="precio">18,00 €</span></div>
-          <div class="plato"><span>Arroz de cangrejo y galeras</span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Arroz de buey de mar</span><span class="precio">18,00 €</span></div>
-          <div class="plato"><span>Arroz con bogavante</span><span class="precio">22,00 €</span></div>
-          <div class="plato"><span>Arroz con langosta</span><span class="precio">23,00 €</span></div>
-          <div class="plato"><span>Arroz del senyoret con carabineros</span><span class="precio">22,00 €</span></div>
-        </div>
-        <p class="nota">Mínimo dos raciones, precio por ración. Por la noche los
-        arroces serán por encargo. Todos nuestros arroces se preparan en el
-        momento. Los arroces de marisco pueden contener sulfitos.</p>
+      <h2 id="arroces">Arroces</h2>
+      <h4>Paellas</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Paella Valenciana</span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Paella de verduras <em>(por encargo)</em></span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Paella de marisco</span><span class="precio">18,00 €</span></div>
+      <div class="plato"><span>Paella mixta <em>(carne y marisco)</em></span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Paella de bogavante</span><span class="precio">22,00 €</span></div>
+      <div class="plato"><span>Fideuà <em>(marisco con fideos)</em></span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Arroz negro <em>(con sepia en su tinta)</em></span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Arroz del senyoret <em>(marisco pelado)</em></span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Arroz a banda <em>(por encargo)</em></span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Arroz de chipirones en su tinta, ajos tiernos y habas</span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Paella de langosta</span><span class="precio">23,00 €</span></div>
+      <div class="plato"><span>Fideuá negra</span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Arroz o fideuá de pato, setas, ajos tiernos y foie <em>(por encargo)</em></span><span class="precio">18,00 €</span></div>
+      </div>
+      <h4>Melosos</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Arroz de pato <em>(por encargo)</em></span><span class="precio">18,00 €</span></div>
+      <div class="plato"><span>Arroz de cangrejo y galeras</span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Arroz de buey de mar</span><span class="precio">18,00 €</span></div>
+      <div class="plato"><span>Arroz con bogavante</span><span class="precio">22,00 €</span></div>
+      <div class="plato"><span>Arroz con langosta</span><span class="precio">23,00 €</span></div>
+      <div class="plato"><span>Arroz del senyoret con carabineros</span><span class="precio">22,00 €</span></div>
+      </div>
+      <p class="nota">Mínimo dos raciones, precio por ración. Por la noche los
+      arroces serán por encargo. Todos nuestros arroces se preparan en el
+      momento. Los arroces de marisco pueden contener sulfitos.</p>
       </div>
 
       <div class="categoria-carta">
-        <h3>Pescados</h3>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Pez espada</span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Dorada</span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Lubina</span><span class="precio">17,00 €</span></div>
-          <div class="plato"><span>All i pebre <em>(anguila, patata, ajo y pimentón — por encargo, mínimo 2 raciones)</em></span><span class="precio">14,00 €</span></div>
-          <div class="plato"><span>Suquet de rape <em>(por encargo, mínimo 2 raciones)</em></span><span class="precio">15,00 €</span></div>
-          <div class="plato"><span>Revolcat de pescado <em>(guiso marinero — por encargo, mínimo 2 raciones)</em></span><span class="precio">15,00 €</span></div>
-          <div class="plato"><span>Parrillada</span><span class="precio">25,00 €</span></div>
-          <div class="plato"><span>Mariscada</span><span class="precio">30,00 €</span></div>
-        </div>
+      <h2 id="pescados">Pescados</h2>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Pez espada</span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Dorada</span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Lubina</span><span class="precio">17,00 €</span></div>
+      <div class="plato"><span>All i pebre <em>(anguila, patata, ajo y pimentón — por encargo, mínimo 2 raciones)</em></span><span class="precio">14,00 €</span></div>
+      <div class="plato"><span>Suquet de rape <em>(por encargo, mínimo 2 raciones)</em></span><span class="precio">15,00 €</span></div>
+      <div class="plato"><span>Revolcat de pescado <em>(guiso marinero — por encargo, mínimo 2 raciones)</em></span><span class="precio">15,00 €</span></div>
+      <div class="plato"><span>Parrillada</span><span class="precio">25,00 €</span></div>
+      <div class="plato"><span>Mariscada</span><span class="precio">30,00 €</span></div>
+      </div>
       </div>
 
       <div class="categoria-carta">
-        <h3>Carne</h3>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Chuletas de cordero</span><span class="precio">16,00 €</span></div>
-          <div class="plato"><span>Entrecot</span><span class="precio">20,00 €</span></div>
-          <div class="plato"><span>Solomillo</span><span class="precio">18,00 €</span></div>
-        </div>
+      <h2 id="carne">Carne</h2>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Chuletas de cordero</span><span class="precio">16,00 €</span></div>
+      <div class="plato"><span>Entrecot</span><span class="precio">20,00 €</span></div>
+      <div class="plato"><span>Solomillo</span><span class="precio">18,00 €</span></div>
+      </div>
       </div>
 
       <div class="categoria-carta">
-        <h3>Postres</h3>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Flan de naranja</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Flan de café</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Flan de queso</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Flan de turrón</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Crema catalana</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Tiramisú</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Tarta de la abuela</span><span class="precio">6,00 €</span></div>
-          <div class="plato"><span>Brownie de chocolate</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Profiteroles <em>(nata/trufa)</em></span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Tarta de queso y arándanos</span><span class="precio">6,00 €</span></div>
-          <div class="plato"><span>Tarta al whiskey</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Tarta crocanti</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Turrón helado</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Piña natural</span><span class="precio">4,00 €</span></div>
-          <div class="plato"><span>Pudding</span><span class="precio">5,00 €</span></div>
-        </div>
+      <h2 id="postres">Postres</h2>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Flan de naranja</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Flan de café</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Flan de queso</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Flan de turrón</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Crema catalana</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Tiramisú</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Tarta de la abuela</span><span class="precio">6,00 €</span></div>
+      <div class="plato"><span>Brownie de chocolate</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Profiteroles <em>(nata/trufa)</em></span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Tarta de queso y arándanos</span><span class="precio">6,00 €</span></div>
+      <div class="plato"><span>Tarta al whiskey</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Tarta crocanti</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Turrón helado</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Piña natural</span><span class="precio">4,00 €</span></div>
+      <div class="plato"><span>Pudding</span><span class="precio">5,00 €</span></div>
+      </div>
       </div>
 
       <div class="categoria-carta">
-        <h3>Menú niños</h3>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Hamburguesa a la plancha con patatas</span><span class="precio">10,00 €</span></div>
-          <div class="plato"><span>Pechuga a la milanesa con patatas</span><span class="precio">10,00 €</span></div>
-          <div class="plato"><span>Spaghetti boloñesa o carbonara</span><span class="precio">12,00 €</span></div>
-        </div>
-        <p class="nota">Alérgenos: consultar.</p>
+      <h2 id="menu-ninos">Menú niños</h2>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Hamburguesa a la plancha con patatas</span><span class="precio">10,00 €</span></div>
+      <div class="plato"><span>Pechuga a la milanesa con patatas</span><span class="precio">10,00 €</span></div>
+      <div class="plato"><span>Spaghetti boloñesa o carbonara</span><span class="precio">12,00 €</span></div>
+      </div>
+      <p class="nota">Alérgenos: consultar.</p>
       </div>
 
       <div class="categoria-carta">
-        <h3>Bebidas</h3>
-        <h4>Cervezas</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Caña</span><span class="precio">2,50 €</span></div>
-          <div class="plato"><span>Doble</span><span class="precio">3,30 €</span></div>
-          <div class="plato"><span>Jarra de cerveza</span><span class="precio">4,00 €</span></div>
-          <div class="plato"><span>Pinta</span><span class="precio">5,00 €</span></div>
-          <div class="plato"><span>Clara</span><span class="precio">3,00 €</span></div>
-          <div class="plato"><span>Radler</span><span class="precio">3,00 €</span></div>
-          <div class="plato"><span>1/3 Alhambra</span><span class="precio">3,30 €</span></div>
-          <div class="plato"><span>Alhambra verde</span><span class="precio">3,30 €</span></div>
-          <div class="plato"><span>Cerveza sin alcohol tostada</span><span class="precio">3,00 €</span></div>
-        </div>
-        <h4>Aguas y refrescos</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Agua Solán 1 litro</span><span class="precio">3,00 €</span></div>
-          <div class="plato"><span>Agua Solán 1/2 litro</span><span class="precio">2,00 €</span></div>
-          <div class="plato"><span>Agua con gas</span><span class="precio">2,00 €</span></div>
-          <div class="plato"><span>Coca-Cola</span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Fanta</span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Aquarius</span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Gaseosa</span><span class="precio">2,50 €</span></div>
-          <div class="plato"><span>Nestea</span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Tónica</span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Sprite</span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Bitter <em>(sin alcohol)</em></span><span class="precio">2,70 €</span></div>
-          <div class="plato"><span>Zumo</span><span class="precio">2,50 €</span></div>
-          <div class="plato"><span>Sangría</span><span class="precio">12,00 €</span></div>
-          <div class="plato"><span>Tinto de verano</span><span class="precio">3,00 €</span></div>
-        </div>
-        <h4>Vermú y combinados</h4>
-        <div class="rejilla-platos">
-          <div class="plato"><span>Martini</span><span class="precio">4,00 €</span></div>
-          <div class="plato"><span>Combinado de ron</span><span class="precio">8,50 €</span></div>
-          <div class="plato"><span>Combinado de ginebra</span><span class="precio">8,50 €</span></div>
-          <div class="plato"><span>Combinado de whisky</span><span class="precio">6,50 €</span></div>
-          <div class="plato"><span>Copa <em>(ron/ginebra/whisky)</em></span><span class="precio">5,00 €/u</span></div>
-          <div class="plato"><span>Chupito</span><span class="precio">2,50 €</span></div>
-        </div>
-        <p class="nota">Precios de cafés y destilados, consultar en sala.</p>
+      <h2 id="bebidas">Bebidas</h2>
+      <h4>Cervezas</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Caña</span><span class="precio">2,50 €</span></div>
+      <div class="plato"><span>Doble</span><span class="precio">3,30 €</span></div>
+      <div class="plato"><span>Jarra de cerveza</span><span class="precio">4,00 €</span></div>
+      <div class="plato"><span>Pinta</span><span class="precio">5,00 €</span></div>
+      <div class="plato"><span>Clara</span><span class="precio">3,00 €</span></div>
+      <div class="plato"><span>Radler</span><span class="precio">3,00 €</span></div>
+      <div class="plato"><span>1/3 Alhambra</span><span class="precio">3,30 €</span></div>
+      <div class="plato"><span>Alhambra verde</span><span class="precio">3,30 €</span></div>
+      <div class="plato"><span>Cerveza sin alcohol tostada</span><span class="precio">3,00 €</span></div>
+      </div>
+      <h4>Aguas y refrescos</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Agua Solán 1 litro</span><span class="precio">3,00 €</span></div>
+      <div class="plato"><span>Agua Solán 1/2 litro</span><span class="precio">2,00 €</span></div>
+      <div class="plato"><span>Agua con gas</span><span class="precio">2,00 €</span></div>
+      <div class="plato"><span>Coca-Cola</span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Fanta</span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Aquarius</span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Gaseosa</span><span class="precio">2,50 €</span></div>
+      <div class="plato"><span>Nestea</span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Tónica</span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Sprite</span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Bitter <em>(sin alcohol)</em></span><span class="precio">2,70 €</span></div>
+      <div class="plato"><span>Zumo</span><span class="precio">2,50 €</span></div>
+      <div class="plato"><span>Sangría</span><span class="precio">12,00 €</span></div>
+      <div class="plato"><span>Tinto de verano</span><span class="precio">3,00 €</span></div>
+      </div>
+      <h4>Vermú y combinados</h4>
+      <div class="rejilla-platos">
+      <div class="plato"><span>Martini</span><span class="precio">4,00 €</span></div>
+      <div class="plato"><span>Combinado de ron</span><span class="precio">8,50 €</span></div>
+      <div class="plato"><span>Combinado de ginebra</span><span class="precio">8,50 €</span></div>
+      <div class="plato"><span>Combinado de whisky</span><span class="precio">6,50 €</span></div>
+      <div class="plato"><span>Copa <em>(ron/ginebra/whisky)</em></span><span class="precio">5,00 €/u</span></div>
+      <div class="plato"><span>Chupito</span><span class="precio">2,50 €</span></div>
+      </div>
+      <p class="nota">Precios de cafés y destilados, consultar en sala.</p>
       </div>
 
       <div class="categoria-carta">
-        <h3>Vinos</h3>
+      <h2 id="vinos">Vinos</h2>
 
-        <h4>Blancos</h4>
-        <div class="vino">
-          <span class="nombre">Hoya de Cadenas Blanco <span class="detalle">D.O. Utiel-Requena · Chardonnay, Sauvignon Blanc · 12%</span></span>
-          <span class="precio">12,00 €<span class="copa">copa 3,00 €</span></span>
-        </div>
-        <div class="vino">
-          <span class="nombre">El Miracle Nº3 Blanco <span class="detalle">D.O. Utiel-Requena · Chardonnay, Macabeo, Sauvignon Blanc · 12%</span></span>
-          <span class="precio">15,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Cullerot <span class="detalle">D.O. Valencia · Pedro Ximénez, Verdil, Chardonnay, Macabeo · 13%</span></span>
-          <span class="precio">15,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Nebla Verdejo <span class="detalle">Vino de la Tierra de Castilla y León · Verdejo · 13%</span></span>
-          <span class="precio">13,00 €<span class="copa">copa 3,00 €</span></span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Ramón Bilbao <span class="detalle">D.O. Rueda · Verdejo · 12,5%</span></span>
-          <span class="precio">18,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Marina Alta <span class="detalle">D.O. Alicante · Moscatel de Alejandría · 11%</span></span>
-          <span class="precio">18,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Martín Códax Albariño <span class="detalle">D.O. Rías Baixas · Albariño · 12,5%</span></span>
-          <span class="precio">20,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Mar de Frades Albariño <span class="detalle">D.O. Rías Baixas · Albariño · 12,5%</span></span>
-          <span class="precio">22,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Vicente Gandia Bobal Blanco <span class="detalle">Blanc de Noirs · D.O. Utiel-Requena · Bobal · 12%</span></span>
-          <span class="precio">19,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Sandara Blanco <span class="detalle">Espumoso, bajo en alcohol · frutas de verano y un toque cítrico · 7,5%</span></span>
-          <span class="precio">12,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Ceramic Sauvignon Blanc <span class="detalle">D.O. Utiel-Requena · Sauvignon Blanc · 13%</span></span>
-          <span class="precio">20,00 €</span>
-        </div>
+      <h4>Blancos</h4>
+      <div class="vino">
+      <span class="nombre">Hoya de Cadenas Blanco <span class="detalle">D.O. Utiel-Requena · Chardonnay, Sauvignon Blanc · 12%</span></span>
+      <span class="precio">12,00 €<span class="copa">copa 3,00 €</span></span>
+      </div>
+      <div class="vino">
+      <span class="nombre">El Miracle Nº3 Blanco <span class="detalle">D.O. Utiel-Requena · Chardonnay, Macabeo, Sauvignon Blanc · 12%</span></span>
+      <span class="precio">15,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Cullerot <span class="detalle">D.O. Valencia · Pedro Ximénez, Verdil, Chardonnay, Macabeo · 13%</span></span>
+      <span class="precio">15,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Nebla Verdejo <span class="detalle">Vino de la Tierra de Castilla y León · Verdejo · 13%</span></span>
+      <span class="precio">13,00 €<span class="copa">copa 3,00 €</span></span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Ramón Bilbao <span class="detalle">D.O. Rueda · Verdejo · 12,5%</span></span>
+      <span class="precio">18,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Marina Alta <span class="detalle">D.O. Alicante · Moscatel de Alejandría · 11%</span></span>
+      <span class="precio">18,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Martín Códax Albariño <span class="detalle">D.O. Rías Baixas · Albariño · 12,5%</span></span>
+      <span class="precio">20,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Mar de Frades Albariño <span class="detalle">D.O. Rías Baixas · Albariño · 12,5%</span></span>
+      <span class="precio">22,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Vicente Gandia Bobal Blanco <span class="detalle">Blanc de Noirs · D.O. Utiel-Requena · Bobal · 12%</span></span>
+      <span class="precio">19,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Sandara Blanco <span class="detalle">Espumoso, bajo en alcohol · frutas de verano y un toque cítrico · 7,5%</span></span>
+      <span class="precio">12,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Ceramic Sauvignon Blanc <span class="detalle">D.O. Utiel-Requena · Sauvignon Blanc · 13%</span></span>
+      <span class="precio">20,00 €</span>
+      </div>
 
-        <h4>Cavas</h4>
-        <div class="vino">
-          <span class="nombre">El Miracle Cava Brut <span class="detalle">D.O. Cava · Macabeo, Chardonnay · 11,5%</span></span>
-          <span class="precio">12,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Hoya de Cadenas Cava Brut Nature <span class="detalle">D.O. Cava · Macabeo, Chardonnay · 11,5%</span></span>
-          <span class="precio">14,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Dominio de la Vega Reserva <span class="detalle">D.O. Cava · Macabeo · 12%</span></span>
-          <span class="precio">28,00 €</span>
-        </div>
+      <h4>Cavas</h4>
+      <div class="vino">
+      <span class="nombre">El Miracle Cava Brut <span class="detalle">D.O. Cava · Macabeo, Chardonnay · 11,5%</span></span>
+      <span class="precio">12,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Hoya de Cadenas Cava Brut Nature <span class="detalle">D.O. Cava · Macabeo, Chardonnay · 11,5%</span></span>
+      <span class="precio">14,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Dominio de la Vega Reserva <span class="detalle">D.O. Cava · Macabeo · 12%</span></span>
+      <span class="precio">28,00 €</span>
+      </div>
 
-        <h4>Tintos</h4>
-        <div class="vino">
-          <span class="nombre">Hoya de Cadenas Cabernet Sauvignon <span class="detalle">D.O. Utiel-Requena · Cabernet Sauvignon · 7 meses en barrica · 13%</span></span>
-          <span class="precio">12,00 €<span class="copa">copa 3,00 €</span></span>
-        </div>
-        <div class="vino">
-          <span class="nombre">El Miracle Nº1 Tinto <span class="detalle">D.O. Utiel-Requena · Bobal · 13%</span></span>
-          <span class="precio">15,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Protos Roble <span class="detalle">D.O. Ribera del Duero · Tempranillo · 6 meses en barrica · 13,5%</span></span>
-          <span class="precio">16,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Ramón Bilbao Crianza <span class="detalle">D.O. Rioja · Tempranillo · 12 meses en barrica · 14%</span></span>
-          <span class="precio">18,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Venta del Puerto Nº12 <span class="detalle">D.O. Valencia · Tempranillo, Cabernet Sauvignon, Merlot, Shiraz · 14,5%</span></span>
-          <span class="precio">15,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Les Alcusses <span class="detalle">D.O. Valencia · Monastrell, Syrah, Merlot, Cabernet Sauvignon, Tempranillo · 4 meses en barrica · 14%</span></span>
-          <span class="precio">17,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Vicente Gandia Bobal Negro <span class="detalle">D.O. Utiel-Requena · Bobal · 12 meses en barrica · 13,5%</span></span>
-          <span class="precio">19,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Ceramic Monastrell criado en tinaja <span class="detalle">D.O. Valencia · Monastrell · 11 meses en barrica y afinado en tinajas · 14,5%</span></span>
-          <span class="precio">20,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Pesquera Crianza <span class="detalle">D.O. Ribera del Duero · Tempranillo · 14%</span></span>
-          <span class="precio">26,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Viña Ardanza Reserva <span class="detalle">D.O. Rioja · Tempranillo, Garnacha · 36 meses en barrica · 13,5%</span></span>
-          <span class="precio">27,00 €</span>
-        </div>
+      <h4>Tintos</h4>
+      <div class="vino">
+      <span class="nombre">Hoya de Cadenas Cabernet Sauvignon <span class="detalle">D.O. Utiel-Requena · Cabernet Sauvignon · 7 meses en barrica · 13%</span></span>
+      <span class="precio">12,00 €<span class="copa">copa 3,00 €</span></span>
+      </div>
+      <div class="vino">
+      <span class="nombre">El Miracle Nº1 Tinto <span class="detalle">D.O. Utiel-Requena · Bobal · 13%</span></span>
+      <span class="precio">15,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Protos Roble <span class="detalle">D.O. Ribera del Duero · Tempranillo · 6 meses en barrica · 13,5%</span></span>
+      <span class="precio">16,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Ramón Bilbao Crianza <span class="detalle">D.O. Rioja · Tempranillo · 12 meses en barrica · 14%</span></span>
+      <span class="precio">18,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Venta del Puerto Nº12 <span class="detalle">D.O. Valencia · Tempranillo, Cabernet Sauvignon, Merlot, Shiraz · 14,5%</span></span>
+      <span class="precio">15,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Les Alcusses <span class="detalle">D.O. Valencia · Monastrell, Syrah, Merlot, Cabernet Sauvignon, Tempranillo · 4 meses en barrica · 14%</span></span>
+      <span class="precio">17,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Vicente Gandia Bobal Negro <span class="detalle">D.O. Utiel-Requena · Bobal · 12 meses en barrica · 13,5%</span></span>
+      <span class="precio">19,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Ceramic Monastrell criado en tinaja <span class="detalle">D.O. Valencia · Monastrell · 11 meses en barrica y afinado en tinajas · 14,5%</span></span>
+      <span class="precio">20,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Pesquera Crianza <span class="detalle">D.O. Ribera del Duero · Tempranillo · 14%</span></span>
+      <span class="precio">26,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Viña Ardanza Reserva <span class="detalle">D.O. Rioja · Tempranillo, Garnacha · 36 meses en barrica · 13,5%</span></span>
+      <span class="precio">27,00 €</span>
+      </div>
 
-        <h4>Rosados</h4>
-        <div class="vino">
-          <span class="nombre">Nebla Verdejo Rosado <span class="detalle">Verdejo · 12,5%</span></span>
-          <span class="precio">12,00 €<span class="copa">copa 3,00 €</span></span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Homenaje <span class="detalle">D.O. Navarra · Garnacha · 13%</span></span>
-          <span class="precio">13,00 €</span>
-        </div>
-        <div class="vino">
-          <span class="nombre">Sandara Rosado <span class="detalle">Espumoso, bajo en alcohol · frutas rojas maduras, final suave y dulce · 7,5%</span></span>
-          <span class="precio">12,00 €</span>
-        </div>
+      <h4>Rosados</h4>
+      <div class="vino">
+      <span class="nombre">Nebla Verdejo Rosado <span class="detalle">Verdejo · 12,5%</span></span>
+      <span class="precio">12,00 €<span class="copa">copa 3,00 €</span></span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Homenaje <span class="detalle">D.O. Navarra · Garnacha · 13%</span></span>
+      <span class="precio">13,00 €</span>
+      </div>
+      <div class="vino">
+      <span class="nombre">Sandara Rosado <span class="detalle">Espumoso, bajo en alcohol · frutas rojas maduras, final suave y dulce · 7,5%</span></span>
+      <span class="precio">12,00 €</span>
+      </div>
+      </div>
+
+      <div class="botonera" style="margin-top:0">
+        <a class="cta" href="tel:+34963247145">Reservar mesa · 96 324 71 45</a>
+        <a class="cta secundaria" href="galeria-es.html">Ver la galería</a>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Playa de Pinedo, Valencia · <a href="tel:+34963247145">96 324 71 45</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Web creada por HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Cocina valenciana tradicional en la playa de Pinedo, Valencia.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Reservar mesa</a></p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <ul>
+        <li>Travesía Pinedo al Mar, 88<br>46013 Valencia</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Cómo llegar</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Llama para confirmar el horario del día.</p>
+    </div>
+    <div>
+      <h3>Secciones</h3>
+      <ul>
+        <li><a href="index-es.html">Inicio</a></li>
+        <li><a href="carta-es.html">Carta</a></li>
+        <li><a href="galeria-es.html">Galería</a></li>
+        <li><a href="contacto-es.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Web creada por HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>

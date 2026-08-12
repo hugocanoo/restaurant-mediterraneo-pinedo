@@ -4,76 +4,249 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gallery — Restaurant Mediterráneo</title>
-<meta name="description" content="Photos of Restaurant Mediterráneo: terrace, dining room and dishes, on Pinedo beach (Valencia).">
+<meta name="description" content="The terrace, the dining room, the rice dishes and the surroundings — real photographs of the restaurant.">
 <meta property="og:title" content="Gallery — Restaurant Mediterráneo">
-<meta property="og:description" content="Terrace, dining room and dishes at Restaurant Mediterráneo, on Pinedo beach.">
-<meta property="og:image" content="fotos/terraza-1.jpg">
+<meta property="og:description" content="The terrace, the dining room, the rice dishes and the surroundings — real photographs of the restaurant.">
+<meta property="og:image" content="fotos/terraza-panoramica.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
-  <a class="marca" href="index-en.html"><img src="fotos/logo.png" alt="Restaurant Mediterráneo"></a>
+  <a class="marca" href="index-en.html">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
+  </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Main">
-      <a href="index-en.html">Home</a>
-      <a href="carta-en.html">Menu</a>
-      <a href="galeria-en.html" aria-current="page">Gallery</a>
-      <a href="contacto-en.html">Contact</a>
+        <a href="index-en.html">Home</a>
+        <a href="carta-en.html">Menu</a>
+        <a href="galeria-en.html" aria-current="page">Gallery</a>
+        <a href="contacto-en.html">Contact</a>
     </nav>
     <div class="selector-idioma" aria-label="Language">
-      <a href="galeria.html">VA</a>
-      <a href="galeria-es.html">ES</a>
-      <a href="galeria-en.html" aria-current="true">EN</a>
+        <a href="galeria.html">VA</a>
+        <a href="galeria-es.html">ES</a>
+        <a href="galeria-en.html" aria-current="true">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Book</a>
+    <button class="abrir-menu" type="button" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main>
-  <section class="bloque">
-    <div class="contenedor">
-      <h1>Gallery</h1>
-      <p>A look at our terrace, dining room and a few of our dishes.</p>
 
-      <div class="rejilla-fotos">
-        <figure class="revelar ancha">
-          <img src="fotos/terraza-1.jpg" alt="Terrace at Restaurant Mediterráneo overlooking the sea">
-          <figcaption>The terrace, facing the sea.</figcaption>
-        </figure>
-        <figure class="revelar ancha">
-          <img src="fotos/comedor-panoramica.jpg" alt="Panoramic view of the dining room at Restaurant Mediterráneo">
-          <figcaption>The dining room, panoramic view.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/comedor-1.jpg" alt="Dining room at Restaurant Mediterráneo">
-          <figcaption>The dining room.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/paella-valenciana.jpg" alt="Valencian paella at Restaurant Mediterráneo">
-          <figcaption>Valencian paella.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/clotxines.jpg" alt="Clotxines (local mussels) at Restaurant Mediterráneo">
-          <figcaption>Clotxines (local mussels).</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/braves.jpg" alt="Braves (spicy fried potatoes) at Restaurant Mediterráneo">
-          <figcaption>Braves (spicy fried potatoes).</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/tellines.jpg" alt="Tellinas (wedge clams) at Restaurant Mediterráneo">
-          <figcaption>Tellinas (wedge clams).</figcaption>
-        </figure>
+  <section class="hero interior">
+    <img class="hero-fondo" src="fotos/comedor-panoramica.jpg" alt="Dining room at Restaurant Mediterráneo" fetchpriority="high">
+    <div class="contenedor">
+      <p class="eyebrow claro">Gallery</p>
+      <h1>Gallery</h1>
+      <p class="intro">The terrace, the dining room, the rice dishes and the surroundings — real photographs of the restaurant.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="grupo-galeria">
+        <h2>The house</h2>
+        <div class="mosaico">
+          <figure class="revelar completa">
+            <img src="fotos/terraza-panoramica.jpg" alt="Terrace at Restaurant Mediterráneo with sea views" loading="lazy">
+            <figcaption>The terrace, facing the sea.</figcaption>
+          </figure>
+          <figure class="revelar completa">
+            <img src="fotos/comedor-panoramica.jpg" alt="Panoramic view of the dining room" loading="lazy">
+            <figcaption>The dining room, panoramic view.</figcaption>
+          </figure>
+          <figure class="revelar media">
+            <img src="fotos/exterior.jpg" alt="Exterior of the restaurant on Pinedo beach" loading="lazy">
+            <figcaption>The entrance, right on the beach.</figcaption>
+          </figure>
+          <figure class="revelar media">
+            <img src="fotos/terraza-2.jpg" alt="Outdoor terrace" loading="lazy">
+            <figcaption>The outdoor terrace.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/comedor-copas.jpg" alt="Table set in the dining room" loading="lazy">
+            <figcaption>The dining room, recently refurbished.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/comedor-sala.jpg" alt="Dining room" loading="lazy">
+            <figcaption>The dining room.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/mesa-puesta.jpg" alt="Detail of a set table" loading="lazy">
+            <figcaption>A table set.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>Rice dishes</h2>
+        <div class="mosaico">
+          <figure class="revelar ancha">
+            <img src="fotos/paellero.jpg" alt="Paellas cooking over the fire" loading="lazy">
+            <figcaption>The paella fires, going.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/ingredientes.jpg" alt="Ingredients for Valencian paella" loading="lazy">
+            <figcaption>Before it starts.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-valenciana.jpg" alt="Valencian paella" loading="lazy">
+            <figcaption>Valencian paella.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-marisco.jpg" alt="Seafood paella" loading="lazy">
+            <figcaption>Seafood paella.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-senyoret.jpg" alt="Arròs del senyoret" loading="lazy">
+            <figcaption>Arròs del senyoret.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-negro.jpg" alt="Black rice" loading="lazy">
+            <figcaption>Black rice.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-bogavante.jpg" alt="Lobster paella" loading="lazy">
+            <figcaption>Lobster paella.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-meloso.jpg" alt="Creamy rice in a casserole" loading="lazy">
+            <figcaption>Creamy rice.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>From the menu</h2>
+        <div class="mosaico">
+          <figure class="revelar">
+            <img src="fotos/clotxines.jpg" alt="Clóchinas (mussels)" loading="lazy">
+            <figcaption>Clóchinas, in season.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tellines.jpg" alt="Wedge clams" loading="lazy">
+            <figcaption>Wedge clams.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/braves.jpg" alt="Patatas bravas" loading="lazy">
+            <figcaption>Patatas bravas.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/calamares.jpg" alt="Fried calamari" loading="lazy">
+            <figcaption>Fried calamari.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/sepionet.jpg" alt="Baby cuttlefish" loading="lazy">
+            <figcaption>Baby cuttlefish.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/esgarraet.jpg" alt="Esgarraet" loading="lazy">
+            <figcaption>Esgarraet.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/pescadito-frito.jpg" alt="Fried fish" loading="lazy">
+            <figcaption>Fried fish.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/puntilla.jpg" alt="Baby squid" loading="lazy">
+            <figcaption>Baby squid.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/mariscada.jpg" alt="Seafood platter" loading="lazy">
+            <figcaption>Seafood platter.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/parrillada.jpg" alt="Mixed grill" loading="lazy">
+            <figcaption>Mixed grill.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/pescado-plancha.jpg" alt="Grilled fish" loading="lazy">
+            <figcaption>Grilled fish.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/chuletas-cordero.jpg" alt="Lamb chops" loading="lazy">
+            <figcaption>Lamb chops.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tarta-abuela.jpg" alt="Grandmother's cake" loading="lazy">
+            <figcaption>Grandmother's cake.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/crema-catalana.jpg" alt="Crema catalana" loading="lazy">
+            <figcaption>Crema catalana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tiramisu.jpg" alt="Tiramisu" loading="lazy">
+            <figcaption>Tiramisu.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>Around us</h2>
+        <div class="mosaico">
+          <figure class="revelar ancha">
+            <img src="fotos/playa-pinedo.jpg" alt="Pinedo beach" loading="lazy">
+            <figcaption>Pinedo beach, a step away.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/playa-atardecer.jpg" alt="Pinedo beach at dusk" loading="lazy">
+            <figcaption>The promenade at dusk.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/albufera-atardecer.jpg" alt="The Albufera at sunset" loading="lazy">
+            <figcaption>The Albufera at sunset.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/albufera-barca.jpg" alt="A boat on the Albufera" loading="lazy">
+            <figcaption>A boat on the Albufera.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="botonera" style="margin-top:0">
+        <a class="cta" href="carta-en.html">See the full menu</a>
+        <a class="cta secundaria" href="tel:+34963247145">Book a table</a>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Pinedo Beach, Valencia · <a href="tel:+34963247145">96 324 71 45</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Website by HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Traditional Valencian cooking on Pinedo beach, Valencia.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Book a table</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Travesía Pinedo al Mar, 88<br>46013 Valencia, Spain</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Find us</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Please call to confirm the day's opening hours.</p>
+    </div>
+    <div>
+      <h3>Sections</h3>
+      <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="carta-en.html">Menu</a></li>
+        <li><a href="galeria-en.html">Gallery</a></li>
+        <li><a href="contacto-en.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Website by HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>

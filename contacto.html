@@ -4,66 +4,123 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contacte — Restaurant Mediterráneo</title>
-<meta name="description" content="Com arribar i contactar amb Restaurant Mediterráneo, a la platja de Pinedo (València).">
+<meta name="description" content="Estem a la platja de Pinedo, al sud de València. Reserves per telèfon.">
 <meta property="og:title" content="Contacte — Restaurant Mediterráneo">
-<meta property="og:description" content="Com arribar i contactar amb Restaurant Mediterráneo, a la platja de Pinedo.">
-<meta property="og:image" content="fotos/terraza-1.jpg">
+<meta property="og:description" content="Estem a la platja de Pinedo, al sud de València. Reserves per telèfon.">
+<meta property="og:image" content="fotos/exterior.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
-  <a class="marca" href="index.html"><img src="fotos/logo.png" alt="Restaurant Mediterráneo"></a>
+  <a class="marca" href="index.html">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
+  </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Principal">
-      <a href="index.html">Inici</a>
-      <a href="carta.html">Carta</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contacto.html" aria-current="page">Contacte</a>
+        <a href="index.html">Inici</a>
+        <a href="carta.html">Carta</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html" aria-current="page">Contacte</a>
     </nav>
     <div class="selector-idioma" aria-label="Idioma">
-      <a href="contacto.html" aria-current="true">VA</a>
-      <a href="contacto-es.html">ES</a>
-      <a href="contacto-en.html">EN</a>
+        <a href="contacto.html" aria-current="true">VA</a>
+        <a href="contacto-es.html">ES</a>
+        <a href="contacto-en.html">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Reservar</a>
+    <button class="abrir-menu" type="button" aria-label="Obrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main>
-  <section class="bloque">
-    <div class="contenedor">
-      <h1>Contacte</h1>
 
-      <dl class="lista-contacto">
-        <div>
-          <dt>On som</dt>
-          <dd>Travessia Pinedo al Mar, 88 · 46013 València, al costat del Parc
-          Natural de l'Albufera.<br>
-          <a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Platja+de+Pinedo+Valencia" target="_blank" rel="noopener">Cercar a Google Maps →</a></dd>
-        </div>
-        <div>
-          <dt>Telèfon</dt>
-          <dd><a href="tel:+34963247145">96 324 71 45</a></dd>
-        </div>
-        <div>
-          <dt>Horari</dt>
-          <dd>Diumenge, de 9.00 a 1.00 h.<br>Dilluns a dimecres, de 9.00 a 19.00
-          h.<br>Dijous a dissabte, de 9.00 a 1.00 h.</dd>
-        </div>
-        <div>
-          <dt>Xarxes</dt>
-          <dd><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook: Mediterraneoplatja</a></dd>
-        </div>
-      </dl>
+  <section class="hero interior">
+    <img class="hero-fondo" src="fotos/playa-atardecer.jpg" alt="Exterior de Restaurant Mediterráneo a Pinedo" fetchpriority="high">
+    <div class="contenedor">
+      <p class="eyebrow claro">Contacte</p>
+      <h1>Contacte</h1>
+      <p class="intro">Estem a la platja de Pinedo, al sud de València. Reserves per telèfon.</p>
     </div>
   </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="rejilla-contacto">
+        <dl class="lista-contacto">
+          <div>
+            <dt>On som</dt>
+            <dd>Travessia Pinedo al Mar, 88<br>46013 València<br>Al costat del Parc Natural de l'Albufera.<br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Buscar a Google Maps &rarr;</a></dd>
+          </div>
+          <div>
+            <dt>Telèfon</dt>
+            <dd><a href="tel:+34963247145">96 324 71 45</a></dd>
+          </div>
+          <div>
+            <dt>Horari</dt>
+            <dd>Diumenge, de 9.00 a 1.00 h.<br>Dilluns a dimecres, de 9.00 a 19.00 h.<br>Dijous a dissabte, de 9.00 a 1.00 h.</dd>
+          </div>
+          <div>
+            <dt>Xarxes</dt>
+            <dd><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook: Mediterraneoplatja</a></dd>
+          </div>
+        </dl>
+        <div>
+          <div class="marco-foto" style="overflow:hidden;border-radius:3px">
+            <img src="fotos/exterior.jpg" alt="Exterior de Restaurant Mediterráneo a Pinedo" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover">
+          </div>
+          <div class="botonera">
+            <a class="cta" href="tel:+34963247145">Telefonar ara</a>
+            <a class="cta secundaria" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Com arribar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="panoramica">
+    <img src="fotos/terraza-panoramica.jpg" alt="Terrassa de Restaurant Mediterráneo a la platja de Pinedo" loading="lazy">
+  </div>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Platja de Pinedo, València · <a href="tel:+34963247145">96 324 71 45</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Web creada per HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Cuina valenciana tradicional a la platja de Pinedo, València.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Reservar taula</a></p>
+    </div>
+    <div>
+      <h3>Contacte</h3>
+      <ul>
+        <li>Travessia Pinedo al Mar, 88<br>46013 València</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Com arribar</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Telefona per a confirmar l'horari del dia.</p>
+    </div>
+    <div>
+      <h3>Seccions</h3>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contacto.html">Contacte</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Web creada per HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>

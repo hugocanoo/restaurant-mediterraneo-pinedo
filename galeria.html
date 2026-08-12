@@ -4,76 +4,249 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galeria — Restaurant Mediterráneo</title>
-<meta name="description" content="Fotos de Restaurant Mediterráneo: terrassa, menjador i plats, a la platja de Pinedo (València).">
+<meta name="description" content="La terrassa, el menjador, els arrossos i l'entorn — fotografies reals del restaurant.">
 <meta property="og:title" content="Galeria — Restaurant Mediterráneo">
-<meta property="og:description" content="Terrassa, menjador i plats de Restaurant Mediterráneo, a la platja de Pinedo.">
-<meta property="og:image" content="fotos/terraza-1.jpg">
+<meta property="og:description" content="La terrassa, el menjador, els arrossos i l'entorn — fotografies reals del restaurant.">
+<meta property="og:image" content="fotos/terraza-panoramica.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
-  <a class="marca" href="index.html"><img src="fotos/logo.png" alt="Restaurant Mediterráneo"></a>
+  <a class="marca" href="index.html">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
+  </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Principal">
-      <a href="index.html">Inici</a>
-      <a href="carta.html">Carta</a>
-      <a href="galeria.html" aria-current="page">Galeria</a>
-      <a href="contacto.html">Contacte</a>
+        <a href="index.html">Inici</a>
+        <a href="carta.html">Carta</a>
+        <a href="galeria.html" aria-current="page">Galeria</a>
+        <a href="contacto.html">Contacte</a>
     </nav>
     <div class="selector-idioma" aria-label="Idioma">
-      <a href="galeria.html" aria-current="true">VA</a>
-      <a href="galeria-es.html">ES</a>
-      <a href="galeria-en.html">EN</a>
+        <a href="galeria.html" aria-current="true">VA</a>
+        <a href="galeria-es.html">ES</a>
+        <a href="galeria-en.html">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Reservar</a>
+    <button class="abrir-menu" type="button" aria-label="Obrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main>
-  <section class="bloque">
-    <div class="contenedor">
-      <h1>Galeria</h1>
-      <p>Un tast visual de la terrassa, el menjador i alguns dels nostres plats.</p>
 
-      <div class="rejilla-fotos">
-        <figure class="revelar ancha">
-          <img src="fotos/terraza-1.jpg" alt="Terrassa de Restaurant Mediterráneo amb vistes al mar">
-          <figcaption>La terrassa, davant del mar.</figcaption>
-        </figure>
-        <figure class="revelar ancha">
-          <img src="fotos/comedor-panoramica.jpg" alt="Vista panoràmica del menjador de Restaurant Mediterráneo">
-          <figcaption>El menjador, vista panoràmica.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/comedor-1.jpg" alt="Menjador de Restaurant Mediterráneo">
-          <figcaption>El menjador.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/paella-valenciana.jpg" alt="Paella valenciana de Restaurant Mediterráneo">
-          <figcaption>Paella valenciana.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/clotxines.jpg" alt="Clotxines de Restaurant Mediterráneo">
-          <figcaption>Clotxines.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/braves.jpg" alt="Braves de Restaurant Mediterráneo">
-          <figcaption>Braves.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/tellines.jpg" alt="Tellines de Restaurant Mediterráneo">
-          <figcaption>Tellines.</figcaption>
-        </figure>
+  <section class="hero interior">
+    <img class="hero-fondo" src="fotos/comedor-panoramica.jpg" alt="Menjador de Restaurant Mediterráneo" fetchpriority="high">
+    <div class="contenedor">
+      <p class="eyebrow claro">Galeria</p>
+      <h1>Galeria</h1>
+      <p class="intro">La terrassa, el menjador, els arrossos i l'entorn — fotografies reals del restaurant.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="grupo-galeria">
+        <h2>La casa</h2>
+        <div class="mosaico">
+          <figure class="revelar completa">
+            <img src="fotos/terraza-panoramica.jpg" alt="Terrassa de Restaurant Mediterráneo amb vistes al mar" loading="lazy">
+            <figcaption>La terrassa, davant del mar.</figcaption>
+          </figure>
+          <figure class="revelar completa">
+            <img src="fotos/comedor-panoramica.jpg" alt="Vista panoràmica del menjador" loading="lazy">
+            <figcaption>El menjador, vista panoràmica.</figcaption>
+          </figure>
+          <figure class="revelar media">
+            <img src="fotos/exterior.jpg" alt="Exterior del restaurant a la platja de Pinedo" loading="lazy">
+            <figcaption>L'entrada, a peu de platja.</figcaption>
+          </figure>
+          <figure class="revelar media">
+            <img src="fotos/terraza-2.jpg" alt="Terrassa exterior del restaurant" loading="lazy">
+            <figcaption>La terrassa exterior.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/comedor-copas.jpg" alt="Taula parada al menjador" loading="lazy">
+            <figcaption>El menjador, acabat de reformar.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/comedor-sala.jpg" alt="Sala del menjador" loading="lazy">
+            <figcaption>La sala.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/mesa-puesta.jpg" alt="Detall d'una taula parada" loading="lazy">
+            <figcaption>Taula parada.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>Els arrossos</h2>
+        <div class="mosaico">
+          <figure class="revelar ancha">
+            <img src="fotos/paellero.jpg" alt="Paelles al foc al paeller" loading="lazy">
+            <figcaption>El paeller, en marxa.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/ingredientes.jpg" alt="Ingredients de la paella valenciana" loading="lazy">
+            <figcaption>Abans de començar.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-valenciana.jpg" alt="Paella valenciana" loading="lazy">
+            <figcaption>Paella valenciana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-marisco.jpg" alt="Paella de marisc" loading="lazy">
+            <figcaption>Paella de marisc.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-senyoret.jpg" alt="Arròs del senyoret" loading="lazy">
+            <figcaption>Arròs del senyoret.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-negro.jpg" alt="Arròs negre" loading="lazy">
+            <figcaption>Arròs negre.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/paella-bogavante.jpg" alt="Paella de llamàntol" loading="lazy">
+            <figcaption>Paella de llamàntol.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/arroz-meloso.jpg" alt="Arròs melós en cassola" loading="lazy">
+            <figcaption>Arròs melós.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>De la carta</h2>
+        <div class="mosaico">
+          <figure class="revelar">
+            <img src="fotos/clotxines.jpg" alt="Clòtxines" loading="lazy">
+            <figcaption>Clòtxines, en temporada.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tellines.jpg" alt="Tellines" loading="lazy">
+            <figcaption>Tellines.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/braves.jpg" alt="Braves" loading="lazy">
+            <figcaption>Braves.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/calamares.jpg" alt="Calamars a la romana" loading="lazy">
+            <figcaption>Calamars a la romana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/sepionet.jpg" alt="Sepionet" loading="lazy">
+            <figcaption>Sepionet.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/esgarraet.jpg" alt="Esgarraet" loading="lazy">
+            <figcaption>Esgarraet.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/pescadito-frito.jpg" alt="Peix fregit" loading="lazy">
+            <figcaption>Peix fregit.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/puntilla.jpg" alt="Puntilla" loading="lazy">
+            <figcaption>Puntilla.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/mariscada.jpg" alt="Mariscada" loading="lazy">
+            <figcaption>Mariscada.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/parrillada.jpg" alt="Parrillada" loading="lazy">
+            <figcaption>Parrillada.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/pescado-plancha.jpg" alt="Peix a la planxa" loading="lazy">
+            <figcaption>Peix a la planxa.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/chuletas-cordero.jpg" alt="Xulles de corder" loading="lazy">
+            <figcaption>Xulles de corder.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tarta-abuela.jpg" alt="Tarta de la iaia" loading="lazy">
+            <figcaption>Tarta de la iaia.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/crema-catalana.jpg" alt="Crema catalana" loading="lazy">
+            <figcaption>Crema catalana.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/tiramisu.jpg" alt="Tiramisú" loading="lazy">
+            <figcaption>Tiramisú.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-galeria">
+        <h2>L'entorn</h2>
+        <div class="mosaico">
+          <figure class="revelar ancha">
+            <img src="fotos/playa-pinedo.jpg" alt="Platja de Pinedo" loading="lazy">
+            <figcaption>La platja de Pinedo, a un pas.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/playa-atardecer.jpg" alt="Platja de Pinedo al capvespre" loading="lazy">
+            <figcaption>El passeig, al capvespre.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/albufera-atardecer.jpg" alt="L'Albufera en pondre's el sol" loading="lazy">
+            <figcaption>L'Albufera, en pondre's el sol.</figcaption>
+          </figure>
+          <figure class="revelar">
+            <img src="fotos/albufera-barca.jpg" alt="Barca a l'Albufera" loading="lazy">
+            <figcaption>Barca a l'Albufera.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="botonera" style="margin-top:0">
+        <a class="cta" href="carta.html">Veure tota la carta</a>
+        <a class="cta secundaria" href="tel:+34963247145">Reservar taula</a>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Platja de Pinedo, València · <a href="tel:+34963247145">96 324 71 45</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Web creada per HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Cuina valenciana tradicional a la platja de Pinedo, València.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Reservar taula</a></p>
+    </div>
+    <div>
+      <h3>Contacte</h3>
+      <ul>
+        <li>Travessia Pinedo al Mar, 88<br>46013 València</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Com arribar</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Telefona per a confirmar l'horari del dia.</p>
+    </div>
+    <div>
+      <h3>Seccions</h3>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contacto.html">Contacte</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Web creada per HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>

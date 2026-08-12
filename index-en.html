@@ -3,98 +3,245 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Restaurant Mediterráneo — Valencian cuisine on Pinedo beach</title>
-<meta name="description" content="Rice dishes and paellas by the sea, on Pinedo beach (Valencia). Terrace overlooking Valencia's harbour.">
-<meta property="og:title" content="Restaurant Mediterráneo — Pinedo Beach">
-<meta property="og:description" content="Traditional Valencian cuisine, rice dishes and paellas, with a terrace facing the sea in Pinedo (Valencia).">
-<meta property="og:image" content="fotos/paella-valenciana.jpg">
+<title>Restaurant Mediterráneo — Valencian cooking by the sea</title>
+<meta name="description" content="Rice dishes, paellas and Mediterranean cooking on Pinedo beach, next to the Albufera Natural Park.">
+<meta property="og:title" content="Restaurant Mediterráneo — Valencian cooking by the sea">
+<meta property="og:description" content="Rice dishes, paellas and Mediterranean cooking on Pinedo beach, next to the Albufera Natural Park.">
+<meta property="og:image" content="fotos/terraza-panoramica.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230e6b6b'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf6ec'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a4747">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a4747'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fbf8f2'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="cabecera">
   <a class="marca" href="index-en.html">
-    <img src="fotos/logo.png" alt="Restaurant Mediterráneo">
+    <img class="logo-claro" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+    <img class="logo-color" src="fotos/logo.png" alt="Restaurant Mediterráneo">
   </a>
   <div class="cabecera-derecha">
     <nav class="nav-principal" aria-label="Main">
-      <a href="index-en.html" aria-current="page">Home</a>
-      <a href="carta-en.html">Menu</a>
-      <a href="galeria-en.html">Gallery</a>
-      <a href="contacto-en.html">Contact</a>
+        <a href="index-en.html" aria-current="page">Home</a>
+        <a href="carta-en.html">Menu</a>
+        <a href="galeria-en.html">Gallery</a>
+        <a href="contacto-en.html">Contact</a>
     </nav>
     <div class="selector-idioma" aria-label="Language">
-      <a href="index.html">VA</a>
-      <a href="index-es.html">ES</a>
-      <a href="index-en.html" aria-current="true">EN</a>
+        <a href="index.html">VA</a>
+        <a href="index-es.html">ES</a>
+        <a href="index-en.html" aria-current="true">EN</a>
     </div>
+    <a class="cta contorno-claro reserva" href="tel:+34963247145">Book</a>
+    <button class="abrir-menu" type="button" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
-<img class="hero-foto" src="fotos/terraza-1.jpg" alt="Terrace at Restaurant Mediterráneo overlooking the sea on Pinedo beach">
-
 <main>
+
   <section class="hero">
+    <img class="hero-fondo" src="fotos/terraza-panoramica.jpg" alt="Terrace of Restaurant Mediterráneo on Pinedo beach" fetchpriority="high">
     <div class="contenedor">
-      <p class="eyebrow">Valencian cuisine · Pinedo Beach</p>
-      <h1>Rice dishes and paellas by the sea</h1>
-      <p class="intro">Right on the beach, next to the Albufera Natural Park,
-      Restaurant Mediterráneo serves traditional Valencian cuisine from its
-      terrace overlooking Valencia's harbour and the sea. Air-conditioned dining
-      room seating 65, with wheelchair access.</p>
-      <a class="cta" href="carta-en.html">View the menu</a>
-      <a class="cta secundaria" href="tel:+34963247145">Book a table: 96 324 71 45</a>
+      <p class="eyebrow claro">Pinedo · Valencia · By the sea</p>
+      <h1>Restaurant Mediterráneo</h1>
+      <p class="lema">Valencian cooking by the sea</p>
+      <p class="intro">Rice dishes, paellas and Mediterranean cooking on Pinedo beach, next to the Albufera Natural Park.</p>
+      <div class="botonera">
+        <a class="cta clara" href="carta-en.html">See the menu</a>
+        <a class="cta contorno-claro" href="tel:+34963247145">Bookings: 96 324 71 45</a>
+      </div>
     </div>
   </section>
 
   <div class="franja-info">
-    <div>
-      <h3>Opening hours</h3>
-      <p>Sunday, 9am–1am.<br>Monday to Wednesday, 9am–7pm.<br>Thursday to Saturday, 9am–1am.</p>
-    </div>
-    <div>
-      <h3>Where we are</h3>
-      <p>Travesía Pinedo al Mar, 88 · 46013 Valencia.</p>
-    </div>
-    <div>
-      <h3>Phone</h3>
-      <p><a href="tel:+34963247145">96 324 71 45</a></p>
+    <div class="contenedor">
+      <div>
+        <h3>Opening hours</h3>
+        <p>Sunday, 9.00 am to 1.00 am.<br>Monday to Wednesday, 9.00 am to 7.00 pm.<br>Thursday to Saturday, 9.00 am to 1.00 am.</p>
+      </div>
+      <div>
+        <h3>Where we are</h3>
+        <p>Travesía Pinedo al Mar, 88<br>46013 Valencia, Spain</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+        <p><a href="tel:+34963247145">96 324 71 45</a></p>
+      </div>
     </div>
   </div>
 
-  <section class="bloque">
+  <section class="seccion">
     <div class="contenedor">
-      <h2>The venue</h2>
-      <p>A refurbished, air-conditioned dining room seating around 65, plus a
-      spacious outdoor terrace with excellent views over Valencia's harbour and
-      the sea — the place to enjoy their specialities right on the
-      Mediterranean, a step from Pinedo beach and the Albufera Natural Park.</p>
+      <div class="duo revelar">
+        <div>
+          <p class="eyebrow">The experience</p>
+          <h2>Much more than a meal</h2>
+        </div>
+        <div class="texto-grande">
+          <p>Right on the beach, Restaurant Mediterráneo has been serving traditional Valencian cooking for years: rice dishes made to order, fish and seafood, and a terrace looking out over the port of Valencia and the sea.</p>
+          <p>A place to share a paella, linger at the table and finish with a walk along Pinedo beach.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="bloque mar">
+  <section class="seccion ajustada" style="padding-top:0">
     <div class="contenedor">
-      <h2>A look inside</h2>
-      <div class="rejilla-fotos">
-        <figure class="revelar">
-          <img src="fotos/comedor-1.jpg" alt="Dining room at Restaurant Mediterráneo, recently refurbished">
-          <figcaption>The dining room, recently refurbished.</figcaption>
-        </figure>
-        <figure class="revelar">
-          <img src="fotos/paella-valenciana.jpg" alt="Valencian paella at Restaurant Mediterráneo">
-          <figcaption>The Valencian paella.</figcaption>
-        </figure>
+      <div class="rejilla-tarjetas">
+        <a class="tarjeta revelar" href="carta-en.html">
+          <div class="marco"><img src="fotos/paella-valenciana.jpg" alt="Valencian paella at Restaurant Mediterráneo" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3>Rice and paellas</h3>
+            <p>Valencian paellas and rice dishes made to order, to share around the table.</p>
+            <span class="enlace-flecha">Discover <span>&rarr;</span></span>
+          </div>
+        </a>
+        <a class="tarjeta revelar" href="galeria-en.html">
+          <div class="marco"><img src="fotos/terraza-2.jpg" alt="Outdoor terrace at Restaurant Mediterráneo" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3>Terrace and dining room</h3>
+            <p>Outdoor terrace with sea views and an air-conditioned, recently refurbished dining room.</p>
+            <span class="enlace-flecha">Discover <span>&rarr;</span></span>
+          </div>
+        </a>
+        <a class="tarjeta revelar" href="contacto-en.html">
+          <div class="marco"><img src="fotos/albufera-atardecer.jpg" alt="The Albufera of Valencia at sunset" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3>Pinedo and the Albufera</h3>
+            <p>A step from the beach and the Albufera Natural Park, south of Valencia.</p>
+            <span class="enlace-flecha">Discover <span>&rarr;</span></span>
+          </div>
+        </a>
       </div>
-      <p style="margin-top:var(--e-24)"><a href="galeria-en.html">See more photos →</a></p>
     </div>
   </section>
+
+  <section class="seccion arena">
+    <div class="contenedor">
+      <div class="seleccion revelar">
+        <div class="marco-foto">
+          <img src="fotos/paella-marisco.jpg" alt="Valencian paella at Restaurant Mediterráneo" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow">Rice dishes</p>
+          <h2>The taste of Valencia</h2>
+          <p>Our rice dishes are the star of the table. They are made to order: allow around 30 minutes.</p>
+          <ul class="lista-precios">
+          <li><span class="nombre">Paella valenciana</span><span class="precio">€14.00</span></li>
+          <li><span class="nombre">Seafood paella</span><span class="precio">€18.00</span></li>
+          <li><span class="nombre">Mixed paella</span><span class="precio">€14.00</span></li>
+          <li><span class="nombre">Fideuà</span><span class="precio">€14.00</span></li>
+          <li><span class="nombre">Black rice</span><span class="precio">€16.00</span></li>
+          <li><span class="nombre">Arròs del senyoret</span><span class="precio">€16.00</span></li>
+          <li><span class="nombre">Arròs a banda</span><span class="precio">€16.00</span></li>
+          <li><span class="nombre">Lobster paella</span><span class="precio">€22.00</span></li>
+          <li><span class="nombre">Crayfish paella</span><span class="precio">€23.00</span></li>
+          </ul>
+          <p style="margin-top:1rem;font-size:.88rem;color:var(--tinta-suave);font-style:italic">Minimum two servings, price per serving.</p>
+          <div class="botonera">
+            <a class="cta" href="carta-en.html">See the full menu</a>
+            <a class="cta secundaria" href="tel:+34963247145">Book by phone</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partido">
+    <div class="lado-foto">
+      <img src="fotos/terraza-2.jpg" alt="Outdoor terrace at Restaurant Mediterráneo" loading="lazy">
+    </div>
+    <div class="lado-panel">
+      <p class="eyebrow claro">The terrace</p>
+      <h2>Dining facing the Mediterranean</h2>
+      <p>Outdoor terrace looking over the port of Valencia and the sea, and an air-conditioned dining room seating around 65.</p>
+      <div class="botonera">
+        <a class="cta clara" href="galeria-en.html">See the gallery</a>
+        <a class="cta contorno-claro" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="duo-columnas revelar">
+        <div>
+          <div class="marco-foto"><img src="fotos/comedor-copas.jpg" alt="Dining room at Restaurant Mediterráneo" loading="lazy"></div>
+          <h3>The restaurant</h3>
+          <ul class="lista-checks">
+            <li>Air-conditioned, refurbished dining room</li>
+            <li>Seats around 65 guests</li>
+            <li>Outdoor terrace with sea views</li>
+            <li>Step-free access for reduced mobility</li>
+          </ul>
+          <p style="margin-top:1.25rem"><a class="enlace-flecha" href="galeria-en.html">See the gallery <span>&rarr;</span></a></p>
+        </div>
+        <div>
+          <div class="marco-foto"><img src="fotos/albufera-atardecer.jpg" alt="The Albufera of Valencia at sunset" loading="lazy"></div>
+          <h3>Pinedo and the Albufera</h3>
+          <p>The restaurant sits on Pinedo beach, south of Valencia, in a landscape shaped by the sea, by rice and by the Albufera Natural Park.</p>
+          <p style="margin-top:1.25rem"><a class="enlace-flecha" href="contacto-en.html">Find us <span>&rarr;</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="panoramica">
+    <img src="fotos/comedor-panoramica.jpg" alt="Dining room at Restaurant Mediterráneo, panoramic view" loading="lazy">
+  </div>
+
+  <section class="seccion arena">
+    <div class="contenedor">
+      <div class="duo alineado revelar">
+        <div>
+          <p class="eyebrow">Bookings</p>
+          <h2>We'll save you a table</h2>
+          <p>Book by phone and we'll take care of it directly. For pre-order rice dishes, please mention it when booking.</p>
+        </div>
+        <div style="display:flex;align-items:center">
+          <div class="botonera" style="margin-top:0">
+            <a class="cta" href="tel:+34963247145">96 324 71 45</a>
+            <a class="cta secundaria" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Find us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="pie">
-  <p>Restaurant Mediterráneo · Pinedo Beach, Valencia · <a href="tel:+34963247145">96 324 71 45</a> · <a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></p>
-  <p class="credito">© 2026 Restaurant Mediterráneo · Website by HCM studio</p>
+  <div class="contenedor">
+    <div>
+      <img class="logo-pie" src="fotos/logo-blanco.png" alt="Restaurant Mediterráneo">
+      <p>Traditional Valencian cooking on Pinedo beach, Valencia.</p>
+      <p style="margin-top:1.25rem"><a class="cta clara" href="tel:+34963247145">Book a table</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Travesía Pinedo al Mar, 88<br>46013 Valencia, Spain</li>
+        <li><a href="tel:+34963247145">96 324 71 45</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Mediterraneo+Travessia+Pinedo+al+Mar+88+Valencia" target="_blank" rel="noopener">Find us</a></li>
+        <li><a href="https://www.facebook.com/mediterraneoplatja" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:.85rem">Please call to confirm the day's opening hours.</p>
+    </div>
+    <div>
+      <h3>Sections</h3>
+      <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="carta-en.html">Menu</a></li>
+        <li><a href="galeria-en.html">Gallery</a></li>
+        <li><a href="contacto-en.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="cierre" style="grid-column:1/-1">
+      <span>© 2026 Restaurant Mediterráneo · Pinedo, València</span>
+      <span>Website by HCM studio</span>
+    </div>
+  </div>
 </footer>
 
 <script src="js/principal.js"></script>
